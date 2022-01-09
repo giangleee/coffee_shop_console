@@ -451,6 +451,7 @@ export default {
 <style lang="scss" scoped>
 @import '../style/pages/index.scss';
 
+
 .lSAction > a {
     background-image: url(../assets/images/controls.png) !important;
 }
