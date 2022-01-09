@@ -28,10 +28,17 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/node_modules/bootstrap/dist/css/bootstrap.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/repositories', { src: '~/plugins/vuelidate' }],
+  plugins: [
+    '~/plugins/repositories',
+    { src: '~/plugins/vuelidate' },
+    { src: '~/plugins/bootstrap' },
+    { src: '~/plugins/infiniteSlideBar' },
+  ],
+
+  
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
