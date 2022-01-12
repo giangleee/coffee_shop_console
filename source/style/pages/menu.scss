@@ -83,6 +83,7 @@ section .bd-links {
 	color: rgba(0, 0, 0, 0.65);
 	background-color: transparent;
 	border: 0;
+  font-size: 1.3rem;
 }
 
 .bd-links .btn:focus {
@@ -129,19 +130,24 @@ section .bd-links {
 }
 
 .menu-item .title {
-	font-family: "SF Pro Display", sans-serif;
+	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+		"Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 	font-size: 2rem;
-	margin-top: 20px;
+	margin-top: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .menu-item .title.coffee {
 	margin-top: 0px;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+		"Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    font-weight: bold;
 }
 
 .menu-item .row img {
 	max-width: 279px;
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 	border-radius: 10px;
 	box-shadow: 0px 0px 13px 0px #00000040;
 	object-fit: cover;
@@ -174,4 +180,12 @@ nav.temp {
 		position: -webkit-sticky;
 		top: 0; /* required */
 
+}
+
+@media screen and (max-width: 990px) {
+	.inside{
+        display: flex;
+        flex-direction: column;
+        max-width: 50rem;
+    }
 }

@@ -8,24 +8,19 @@
                 <div class="text-center">
                     <ul class="navbar-nav flex-row mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="#"
-                                >Top</a
-                            >
+                            <NuxtLink class="nuxtlink nav-link active" aria-current="page" to="/">Top</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
+                            <NuxtLink class="nuxtlink nav-link" to="/menu">Menu</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
+                            <NuxtLink class="nuxtlink nav-link" to="/">News</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Story</a>
+                            <NuxtLink class="nuxtlink nav-link" to="/">Story</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                           <NuxtLink class="nuxtlink nav-link" to="/contact-form">Contact form</NuxtLink> 
                         </li>
                         <li class="nav-item" style="padding-top: 10px">
                             <div class="title-job">
@@ -88,25 +83,20 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a
-                                    class="nav-link active"
-                                    aria-current="page"
-                                    href="#"
-                                    >Top</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Menu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Story</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
+                            <!-- <NuxtLink class="nuxtlink nav-link active" aria-current="page" to="/">Top</NuxtLink> -->
+                        </li>
+                        <li class="nav-item">
+                            <!-- <NuxtLink class="nuxtlink nav-link" to="/menu">Menu</NuxtLink> -->
+                        </li>
+                        <li class="nav-item">
+                            <!-- <NuxtLink class="nuxtlink nav-link" to="/">News</NuxtLink> -->
+                        </li>
+                        <li class="nav-item">
+                            <!-- <NuxtLink class="nuxtlink nav-link" to="/">Story</NuxtLink> -->
+                        </li>
+                        <li class="nav-item">
+                           <!-- <NuxtLink class="nuxtlink nav-link" to="/contact-form">Contact form</NuxtLink>  -->
+                        </li>
                             <li class="nav-item">
                                 <div class="title-job">
                                     <div

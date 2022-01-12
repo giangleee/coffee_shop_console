@@ -25,7 +25,7 @@
             </b-carousel>
         </div>
 
-        <div class="about">
+        <div id="news" class="about" >
             <h2 class="about-title">
                 春夏秋冬、季節ごとに装いが移り変わる<br />
                 “HIBIKAの四季菓子”
@@ -82,13 +82,13 @@
                     <div class="box">
                         <div class="slide-img">
                             <img
-                                src="../assets/images/favorite-drink/bubble_milk.jpg"
+                                src="../assets/images/coffee/690_690/blend.jpg"
                                 alt="img-1"
                             />
                         </div>
                         <div class="detail-box">
                             <div class="type">
-                                <a href="#">Coffee name</a>
+                                <a href="#">Blend</a>
                                 <span>Information</span>
                             </div>
                             <p class="price">$5</p>
@@ -98,13 +98,13 @@
                     <div class="box">
                         <div class="slide-img">
                             <img
-                                src="../assets/images/favorite-drink/iced_coffe.jpg"
+                                src="../assets/images/coffee/690_690/capuchino.jpg"
                                 alt="img-1"
                             />
                         </div>
                         <div class="detail-box">
                             <div class="type">
-                                <a href="#">Coffee name</a>
+                                <a href="#">Capuchino</a>
                                 <span>Information</span>
                             </div>
                             <p class="price">$5</p>
@@ -114,13 +114,13 @@
                     <div class="box">
                         <div class="slide-img">
                             <img
-                                src="../assets/images/favorite-drink/iced_honey_coffee.jpg"
+                                src="../assets/images/coffee/690_690/matcha _latte.jpg"
                                 alt="img-1"
                             />
                         </div>
                         <div class="detail-box">
                             <div class="type">
-                                <a href="#">Coffee name</a>
+                                <a href="#">Matcha latte</a>
                                 <span>Information</span>
                             </div>
                             <p class="price">$5</p>
@@ -130,14 +130,14 @@
                     <div class="box">
                         <div class="slide-img">
                             <img
-                                src="../assets/images/favorite-drink/iced_latte.jpg"
+                                src="../assets/images/coffee/690_690/mocha.jpg"
                                 alt="img-1"
                             />
                             <div class="overlay"></div>
                         </div>
                         <div class="detail-box">
                             <div class="type">
-                                <a href="#">Coffee name</a>
+                                <a href="#">Mocha</a>
                                 <span>Information</span>
                             </div>
                             <p class="price">$5</p>
@@ -147,14 +147,14 @@
                     <div class="box">
                         <div class="slide-img">
                             <img
-                                src="../assets/images/favorite-drink/bubble_milk_tea.jpg"
+                                src="../assets/images/coffee/690_690/presso.jpg"
                                 alt="img-1"
                             />
                             <div class="overlay"></div>
                         </div>
                         <div class="detail-box">
                             <div class="type">
-                                <a href="#">Coffee name</a>
+                                <a href="#">Presso</a>
                                 <span>Information</span>
                             </div>
                             <p class="price">$5</p>
@@ -164,14 +164,14 @@
                     <div class="box">
                         <div class="slide-img">
                             <img
-                                src="../assets/images/favorite-drink/iced_coffe_mocha.jpg"
+                                src="../assets/images/coffee/690_690/20191031123921.jpg"
                                 alt="img-1"
                             />
                             <div class="overlay"></div>
                         </div>
                         <div class="detail-box">
                             <div class="type">
-                                <a href="#">Coffee name</a>
+                                <a href="#">Special</a>
                                 <span>Information</span>
                             </div>
                             <p class="price">$5</p>
