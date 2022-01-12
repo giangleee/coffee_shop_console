@@ -72,7 +72,7 @@
                                                 rounded
                                             "
                                         >
-                                            Coffee nguyên chất
+                                            Pure Coffee 
                                         </li>
                                     </ul>
                                     <ul class="fw-normal pb-1 small">
@@ -83,7 +83,7 @@
                                                 rounded
                                             "
                                         >
-                                            Coffee pha
+                                            Brew Coffee 
                                         </li>
                                     </ul>
                                 </div>
@@ -110,7 +110,7 @@
                                                 rounded
                                             "
                                         >
-                                            Tea nguyên chất
+                                            Pure Tea
                                         </li>
                                         <li
                                             class="
@@ -119,7 +119,7 @@
                                                 rounded
                                             "
                                         >
-                                            Tea pha
+                                            Brew Tea
                                         </li>
                                     </ul>
                                     <ul class="fw-normal pb-1 small">
@@ -130,7 +130,7 @@
                                                 rounded
                                             "
                                         >
-                                            Tea pha
+                                            Iced Tea 
                                         </li>
                                     </ul>
                                 </div>
@@ -157,7 +157,7 @@
                                                 rounded
                                             "
                                         >
-                                            Cake ngọt
+                                            Pastry
                                         </li>
                                     </ul>
                                     <ul class="fw-normal pb-1 small">
@@ -168,7 +168,7 @@
                                                 rounded
                                             "
                                         >
-                                            Cake mặn
+                                            Tart
                                         </li>
                                     </ul>
                                 </div>
@@ -177,28 +177,28 @@
                     </nav>
                 </aside>
                 <main class="bd-main order-1">
-                    <h1 class="title coffee">Cà phê</h1>
+                    <h1 class="title coffee">Coffee</h1>
                     <div class="row">
                         <picture class="col-4">
                             <img
-                                src="../assets/images/coffee/coffee_1.jpg"
+                                src="../assets/images/coffee/coffee_16.jpg"
                                 alt=""
                             />
-                            <a href="#" class="image-content">Bạc sỉu đá</a>
+                            <a href="#" class="image-content">Black coffee</a>
                         </picture>
                     </div>
-                    <h1 class="title">Trà</h1>
+                    <h1 class="title">Tea</h1>
                     <div class="row">
                         <picture class="col-4">
-                            <img src="../assets/images/tea/tea_1.jpg" alt="" />
-                            <a href="#" class="image-content">Bạc sỉu đá</a>
+                            <img src="../assets/images/tea/tea_11.jpg" alt="" />
+                            <a href="#" class="image-content">Orange lemongrass peach tea</a>
                         </picture>
                     </div>
-                    <h1 class="title">Bánh</h1>
+                    <h1 class="title">Cake</h1>
                     <div class="row">
                         <picture class="col-4">
-                            <img src="../assets/images/cake/cake_1.jpg" alt="" />
-                            <a href="#" class="image-content">Bạc sỉu đá</a>
+                            <img src="../assets/images/cake/pyramid-cake.jpg" alt="" />
+                            <a href="#" class="image-content">Pyramid cake</a>
                         </picture>
                     </div>
                 </main>
