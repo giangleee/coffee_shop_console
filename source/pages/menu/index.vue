@@ -50,6 +50,21 @@
                 <aside class="bd-sidebar">
                     <nav id="bd-docs-nav" class="collapse bd-links sticky-top">
                         <ul class="mb-0 py-3 pt-md-1">
+                          <li class="mb-1">
+                                <button
+                                    class="
+                                        btn-d-inline-flex
+                                        align-items-center
+                                        rounded
+                                        btn
+                                    "
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#all"
+                                >
+                                    All
+                                </button>
+                                
+                            </li>
                             <li class="mb-1">
                                 <button
                                     class="
@@ -72,7 +87,7 @@
                                                 rounded
                                             "
                                         >
-                                            Coffee nguyên chất
+                                            Pure Coffee 
                                         </li>
                                     </ul>
                                     <ul class="fw-normal pb-1 small">
@@ -83,7 +98,7 @@
                                                 rounded
                                             "
                                         >
-                                            Coffee pha
+                                            Brew Coffee 
                                         </li>
                                     </ul>
                                 </div>
@@ -110,17 +125,9 @@
                                                 rounded
                                             "
                                         >
-                                            Tea nguyên chất
+                                            Pure Tea
                                         </li>
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Tea pha
-                                        </li>
+                                        
                                     </ul>
                                     <ul class="fw-normal pb-1 small">
                                         <li
@@ -130,7 +137,7 @@
                                                 rounded
                                             "
                                         >
-                                            Tea pha
+                                            Iced Tea 
                                         </li>
                                     </ul>
                                 </div>
@@ -157,7 +164,7 @@
                                                 rounded
                                             "
                                         >
-                                            Cake ngọt
+                                            Pastry
                                         </li>
                                     </ul>
                                     <ul class="fw-normal pb-1 small">
@@ -168,7 +175,7 @@
                                                 rounded
                                             "
                                         >
-                                            Cake mặn
+                                            Tart
                                         </li>
                                     </ul>
                                 </div>
@@ -177,28 +184,58 @@
                     </nav>
                 </aside>
                 <main class="bd-main order-1">
-                    <h1 class="title coffee">Cà phê</h1>
+                    <h1 class="title coffee">Coffee</h1>
                     <div class="row">
                         <picture class="col-4">
                             <img
-                                src="../../assets/images/coffee/coffee_1.jpg"
+                                src="../../assets/images/coffee/690_690/latte.jpg"
                                 alt=""
                             />
-                            <a href="#" class="image-content">Bạc sỉu đá</a>
+                            <a href="#" class="image-content text-center">Latte</a>
+                        </picture>
+                        <picture class="col-4">
+                            <img
+                                src="../../assets/images/coffee/690_690/capuchino.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center">Capuchino</a>
+                        </picture>
+                        <picture class="col-4">
+                            <img
+                                src="../../assets/images/coffee/690_690/mocha.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center">Mocha</a>
                         </picture>
                     </div>
-                    <h1 class="title">Trà</h1>
+                    <h1 class="title">Tea</h1>
                     <div class="row">
                         <picture class="col-4">
-                            <img src="../../assets/images/tea/tea_1.jpg" alt="" />
-                            <a href="#" class="image-content">Bạc sỉu đá</a>
+                            <img src="../../assets/images/tea/690.690/rooibos-tea.jpg" alt="" />
+                            <a href="#" class="image-content text-center">Rooibos tea</a>
+                        </picture>
+                         <picture class="col-4">
+                            <img src="../../assets/images/tea/690.690/royal-milk-tea.jpg" alt="" />
+                            <a href="#" class="image-content text-center">Royal milk tea</a>
+                        </picture>
+                         <picture class="col-4">
+                            <img src="../../assets/images/tea/690.690/matcha-latte.jpg" alt="" />
+                            <a href="#" class="image-content text-center">Matcha tea</a>
                         </picture>
                     </div>
-                    <h1 class="title">Bánh</h1>
+                    <h1 class="title">Cake</h1>
                     <div class="row">
                         <picture class="col-4">
-                            <img src="../../assets/images/cake/cake_1.jpg" alt="" />
-                            <a href="#" class="image-content">Bạc sỉu đá</a>
+                            <img src="../../assets/images/cake/690.690/bake-cheese-cake.jpg" alt="" />
+                            <a href="#" class="image-content text-center">Bake cheese cake</a>
+                        </picture>
+                        <picture class="col-4">
+                            <img src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg" alt="" />
+                            <a href="#" class="image-content text-center">Chocolate crepe cake</a>
+                        </picture>
+                        <picture class="col-4">
+                            <img src="../../assets/images/cake/690.690/mille-crepe-cake.jpg" alt="" />
+                            <a href="#" class="image-content text-center">Mille crepe cake</a>
                         </picture>
                     </div>
                 </main>
@@ -212,10 +249,15 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 export default {
     layout: 'AuthPage',
+      head(){
+    return {
+      title: 'HIBIKA|Menu'
+      }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../style/pages/menu/index.scss';
-@import '../../style/pages/index.scss';
+@import '../../style/pages/menu.scss';
+@import '../../style/pages/index/main.scss';
 </style>

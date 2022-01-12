@@ -147,7 +147,7 @@
           this site
         </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
     </div>
@@ -179,6 +179,12 @@ export default {
         option: null,
       },
     }
+  },
+
+  head(){
+    return {
+      title: 'HIBIKA|Contact form'
+      }
   },
 
   validations: {
@@ -224,5 +230,5 @@ export default {
 </script>
 
 <style lang="scss" scoped >
-@import '../style/pages/contactForm.scss';
+@import '../style/pages/contact-form.scss';
 </style>
