@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-3">
                     <picture>
-                        <img src="../../../assets/images/cake/690.690/mille-crepe-cake.jpg" alt="">
+                        <img src="../../../assets/images/cake/pyramid-cake.jpg" alt="">
                     </picture>
                 </div>
             </div>
@@ -35,31 +35,31 @@
             <div class="row">
                 <div class="col-6 col-lg-3">
                     <picture>
-                        <img src="../../../assets/images/cake/cake_1.jpg" alt="">
+                        <img src="../../../assets/images/cake/cake_9.jpg" alt="">
                         <p class="text-center">some text</p>
                     </picture>
                 </div>
                 <div class="col-6 col-lg-3">
                     <picture>
-                        <img src="../../../assets/images/cake/cake_1.jpg" alt="">
+                        <img src="../../../assets/images/cake/cake_10.jpg" alt="">
                         <p class="text-center">some text</p>
                     </picture>
                 </div>
                 <div class="col-6 col-lg-3">
                     <picture>
-                        <img src="../../../assets/images/cake/cake_1.jpg" alt="">
+                        <img src="../../../assets/images/cake/cake_13.jpg" alt="">
                         <p class="text-center">some text</p>
                     </picture>
                 </div>
                 <div class="col-6 col-lg-3">
                     <picture>
-                        <img src="../../../assets/images/cake/cake_1.jpg" alt="">
+                        <img src="../../../assets/images/cake/cake_7.jpg" alt="">
                         <p class="text-center">some text</p>
                     </picture>
                 </div>
                 <div class="col-6 col-lg-3">
                     <picture>
-                        <img src="../../../assets/images/cake/cake_1.jpg" alt="">
+                        <img src="../../../assets/images/cake/cake_12.jpg" alt="">
                         <p class="text-center">some text</p>
                     </picture>
                 </div>
@@ -73,6 +73,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 export default {
     layout: 'AuthPage',
+      head(){
+    return {
+      title: 'HIBIKA|Detail'
+      }
+  },
 }
 </script>
 

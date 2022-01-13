@@ -5,18 +5,25 @@
                 <div class="col-12 col-lg-3">
                     <h3>About us</h3>
                     <ul>
-                        <li>Top</li>
-                        <li>Menu</li>
-                        <li>News</li>
-                        <li>Story</li>
-                        <li>Contact</li>
+                        <!-- <li><NuxtLink class="nuxtlink" to="/">Top</NuxtLink></li>
+                        <li><NuxtLink class="nuxtlink" to="../menu">Menu</NuxtLink></li>
+                        <li><NuxtLink class="nuxtlink" to="/">News</NuxtLink></li>
+                        <li><NuxtLink class="nuxtlink" to="/">Story</NuxtLink></li>
+                        <li><NuxtLink class="nuxtlink" to="../contact-form">Contact form</NuxtLink></li> -->
                     </ul>
                 </div>
                 <div class="col-12 col-lg-3">
                     <h3>Terms</h3>
                     <ul>
-                        <li>Terms of Use</li>
-                        <li>Privacy Policy</li>
+                        <!-- <li>
+                            <NuxtLink class="nuxtlink" to="../term-of-use">Terms of Use</NuxtLink>
+                          </li>
+                        <li>
+                          <NuxtLink class="nuxtlink" to="../privacy-policy">Privacy Policy</NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink class="nuxtlink" to="../faq">FAQ</NuxtLink>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="col-12 col-lg-3">
