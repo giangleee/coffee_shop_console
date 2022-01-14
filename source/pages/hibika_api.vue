@@ -71,116 +71,33 @@
             </div>
         </div>
 
-        <div class="favorite">
-            <h2 class="title">FAVORITE</h2>
-            <section class="slider">
-                <infinite-slide-bar
-                    duration="35s"
-                    direction="reverse"
-                    delay="10s"
-                    :bar-style="{ padding: '5px 0' }"
-                >
-                    <div class="box">
-                        <div class="slide-img">
-                            <img
-                                src="../assets/images/coffee/690_690/blend.jpg"
-                                alt="img-1"
-                            />
-                        </div>
-                        <div class="detail-box">
-                            <div class="type">
-                                <a href="#">Blend</a>
-                                <span>Information</span>
-                            </div>
-                            <p class="price">$3</p>
-                        </div>
-                    </div>
+        <h2 class="title">FAVORITE</h2>
 
+        <infinite-slide-bar
+            duration="35s"
+            direction="reverse"
+            :bar-style="{ padding: '5px 0' }"
+        >
+            <div class="loop">
+                <div v-for="item in favorite.objects" :key="item.id">
                     <div class="box">
                         <div class="slide-img">
                             <img
-                                src="../assets/images/coffee/690_690/capuchino.jpg"
+                                :src="`../_nuxt/${item.link_image}`"
                                 alt="img-1"
                             />
                         </div>
                         <div class="detail-box">
                             <div class="type">
-                                <a href="#">Capuchino</a>
-                                <span>Information</span>
+                                <a href="#">{{ item.title }}</a>
+                                <span>{{ item.description }}</span>
                             </div>
-                            <p class="price">$3.20</p>
+                            <p class="price">$ {{ item.price }}</p>
                         </div>
                     </div>
-
-                    <div class="box">
-                        <div class="slide-img">
-                            <img
-                                src="../assets/images/coffee/690_690/matcha_latte.jpg"
-                                alt="img-1"
-                            />
-                        </div>
-                        <div class="detail-box">
-                            <div class="type">
-                                <a href="#">Matcha latte</a>
-                                <span>Information</span>
-                            </div>
-                            <p class="price">$3.20</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="slide-img">
-                            <img
-                                src="../assets/images/coffee/690_690/mocha.jpg"
-                                alt="img-1"
-                            />
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="detail-box">
-                            <div class="type">
-                                <a href="#">Mocha</a>
-                                <span>Information</span>
-                            </div>
-                            <p class="price">$2.50</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="slide-img">
-                            <img
-                                src="../assets/images/coffee/690_690/presso.jpg"
-                                alt="img-1"
-                            />
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="detail-box">
-                            <div class="type">
-                                <a href="#">Presso</a>
-                                <span>Information</span>
-                            </div>
-                            <p class="price">$3.50</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="slide-img">
-                            <img
-                                src="../assets/images/coffee/690_690/20191031123921.jpg"
-                                alt="img-1"
-                            />
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="detail-box">
-                            <div class="type">
-                                <a href="#">Special</a>
-                                <span>Information</span>
-                            </div>
-                            <p class="price">$3.50</p>
-                        </div>
-                    </div>
-                </infinite-slide-bar>
-            </section>
-        </div>
+                </div>
+            </div>
+        </infinite-slide-bar>
 
         <div class="story frame-margin">
             <h5 class="title text-center">STORIES</h5>
