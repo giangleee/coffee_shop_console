@@ -193,13 +193,17 @@
                             >
                                 <picture>
                                     <img
-                                        :src="`../../_nuxt/${item.link_image}`"
+                                        :src="`../../_nuxt/assets/images/${item.link_image}`"
                                         alt=""
                                     />
-                                    <a
-                                        href="#"
+
+                                    <nuxt-link
+                                        :to="{
+                                            path: `detail/${item.id}`,
+                                            params: { coffee_product },
+                                        }"
                                         class="image-content text-center"
-                                        >{{ item.title }}</a
+                                        >{{ item.title }}</nuxt-link
                                     >
                                 </picture>
                             </div>
@@ -216,13 +220,16 @@
                             >
                                 <picture>
                                     <img
-                                        :src="`../../_nuxt/${item.link_image}`"
+                                        :src="`../../_nuxt/assets/images/${item.link_image}`"
                                         alt=""
                                     />
-                                    <a
-                                        href="#"
+                                    <nuxt-link
+                                        :to="{
+                                            path: `detail/${item.id}`,
+                                            params: { tea_product },
+                                        }"
                                         class="image-content text-center"
-                                        >{{ item.title }}</a
+                                        >{{ item.title }}</nuxt-link
                                     >
                                 </picture>
                             </div>
@@ -239,13 +246,16 @@
                             >
                                 <picture>
                                     <img
-                                        :src="`../../_nuxt/${item.link_image}`"
+                                        :src="`../../_nuxt/assets/images/${item.link_image}`"
                                         alt=""
                                     />
-                                    <a
-                                        href="#"
+                                    <nuxt-link
+                                        :to="{
+                                            path: `detail/${item.id}`,
+                                            params: { cake_product },
+                                        }"
                                         class="image-content text-center"
-                                        >{{ item.title }}</a
+                                        >{{ item.title }}</nuxt-link
                                     >
                                 </picture>
                             </div>
@@ -270,6 +280,7 @@ export default {
             coffee: 1,
             tea: 2,
             cake: 3,
+            images: [],
         }
     },
     head() {
@@ -281,6 +292,9 @@ export default {
         this.getCoffeeProduct()
         this.getTeaProduct()
         this.getCakeProduct()
+    },
+    mounted() {
+        this.importAll(require.context('../../assets/images/', true))
     },
     methods: {
         async getCoffeeProduct() {
@@ -294,6 +308,11 @@ export default {
         async getCakeProduct() {
             this.cake_product = await this.$axios.$get(`/product/${this.cake}`)
         },
+        importAll(r) {
+            r.keys().forEach((key) =>
+                this.images.push({ pathLong: r(key), pathShort: key })
+            )
+        },
     },
 }
 </script>
@@ -303,6 +322,6 @@ export default {
 @import '../../style/pages/index/main.scss';
 
 .active:before {
-  display: inline;
+    display: inline;
 }
 </style>
