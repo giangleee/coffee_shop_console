@@ -50,20 +50,20 @@
                 <aside class="bd-sidebar">
                     <nav id="bd-docs-nav" class="collapse bd-links sticky-top">
                         <ul class="mb-0 py-3 pt-md-1">
-                          <li class="mb-1">
+                            <li class="mb-1">
                                 <button
                                     class="
                                         btn-d-inline-flex
                                         align-items-center
                                         rounded
                                         btn
+                                        active
                                     "
                                     data-bs-toggle="collapse"
                                     data-bs-target="#all"
                                 >
                                     All
                                 </button>
-                                
                             </li>
                             <li class="mb-1">
                                 <button
@@ -87,7 +87,7 @@
                                                 rounded
                                             "
                                         >
-                                            Pure Coffee 
+                                            Pure Coffee
                                         </li>
                                     </ul>
                                     <ul class="fw-normal pb-1 small">
@@ -98,7 +98,7 @@
                                                 rounded
                                             "
                                         >
-                                            Brew Coffee 
+                                            Brew Coffee
                                         </li>
                                     </ul>
                                 </div>
@@ -127,7 +127,6 @@
                                         >
                                             Pure Tea
                                         </li>
-                                        
                                     </ul>
                                     <ul class="fw-normal pb-1 small">
                                         <li
@@ -137,7 +136,7 @@
                                                 rounded
                                             "
                                         >
-                                            Iced Tea 
+                                            Iced Tea
                                         </li>
                                     </ul>
                                 </div>
@@ -184,59 +183,73 @@
                     </nav>
                 </aside>
                 <main class="bd-main order-1">
-                    <h1 class="title coffee">Coffee</h1>
-                    <div class="row">
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/latte.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Latte</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/capuchino.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Capuchino</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/mocha.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Mocha</a>
-                        </picture>
+                    <div>
+                        <h1 class="title coffee">Coffee</h1>
+                        <div class="row">
+                            <div
+                                v-for="item in coffee_product.objects"
+                                :key="item.id"
+                                class="col-4"
+                            >
+                                <picture>
+                                    <img
+                                        :src="`../../_nuxt/${item.link_image}`"
+                                        alt=""
+                                    />
+                                    <a
+                                        href="#"
+                                        class="image-content text-center"
+                                        >{{ item.title }}</a
+                                    >
+                                </picture>
+                            </div>
+                        </div>
                     </div>
-                    <h1 class="title">Tea</h1>
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/rooibos-tea.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Rooibos tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/royal-milk-tea.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Royal milk tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/matcha-latte.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Matcha tea</a>
-                        </picture>
+
+                    <div>
+                        <h1 class="title">Tea</h1>
+                        <div class="row">
+                            <div
+                                v-for="item in tea_product.objects"
+                                :key="item.id"
+                                class="col-4"
+                            >
+                                <picture>
+                                    <img
+                                        :src="`../../_nuxt/${item.link_image}`"
+                                        alt=""
+                                    />
+                                    <a
+                                        href="#"
+                                        class="image-content text-center"
+                                        >{{ item.title }}</a
+                                    >
+                                </picture>
+                            </div>
+                        </div>
                     </div>
-                    <h1 class="title">Cake</h1>
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/bake-cheese-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bake cheese cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Chocolate crepe cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/mille-crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Mille crepe cake</a>
-                        </picture>
+
+                    <div>
+                        <h1 class="title">Cake</h1>
+                        <div class="row">
+                            <div
+                                v-for="item in cake_product.objects"
+                                :key="item.id"
+                                class="col-4"
+                            >
+                                <picture>
+                                    <img
+                                        :src="`../../_nuxt/${item.link_image}`"
+                                        alt=""
+                                    />
+                                    <a
+                                        href="#"
+                                        class="image-content text-center"
+                                        >{{ item.title }}</a
+                                    >
+                                </picture>
+                            </div>
+                        </div>
                     </div>
                 </main>
             </div>
@@ -249,15 +262,47 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 export default {
     layout: 'AuthPage',
-      head(){
-    return {
-      title: 'HIBIKA|Menu'
-      }
-  },
+    data() {
+        return {
+            coffee_product: '',
+            tea_product: '',
+            cake_product: '',
+            coffee: 1,
+            tea: 2,
+            cake: 3,
+        }
+    },
+    head() {
+        return {
+            title: 'HIBIKA|Menu',
+        }
+    },
+    created() {
+        this.getCoffeeProduct()
+        this.getTeaProduct()
+        this.getCakeProduct()
+    },
+    methods: {
+        async getCoffeeProduct() {
+            this.coffee_product = await this.$axios.$get(
+                `/product/${this.coffee}`
+            )
+        },
+        async getTeaProduct() {
+            this.tea_product = await this.$axios.$get(`/product/${this.tea}`)
+        },
+        async getCakeProduct() {
+            this.cake_product = await this.$axios.$get(`/product/${this.cake}`)
+        },
+    },
 }
 </script>
 
 <style lang="scss" scoped>
 @import '../../style/pages/menu.scss';
 @import '../../style/pages/index/main.scss';
+
+.active:before {
+  display: inline;
+}
 </style>
