@@ -183,168 +183,73 @@
                     </nav>
                 </aside>
                 <main class="bd-main order-1">
-                    <h1 class="title coffee">Coffee</h1>
-                    <div class="row">
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/latte.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Latte</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/blend.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Capuchino</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/mocha.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Mocha</a>
-                        </picture>
-                    </div>
-                    <div class="row">
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/blend.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Blend</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/matcha_latte.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Matcha latte</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/presso.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Presso</a>
-                        </picture>
+                    <div>
+                        <h1 class="title coffee">Coffee</h1>
+                        <div class="row">
+                            <div
+                                v-for="item in coffee_product.objects"
+                                :key="item.id"
+                                class="col-4"
+                            >
+                                <picture>
+                                    <img
+                                        :src="`../../_nuxt/${item.link_image}`"
+                                        alt=""
+                                    />
+                                    <a
+                                        href="#"
+                                        class="image-content text-center"
+                                        >{{ item.title }}</a
+                                    >
+                                </picture>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="row">
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/20191031123921.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Special</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/blend.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Kopi Luwak</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/latte.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Macchiato</a>
-                        </picture>
+                    <div>
+                        <h1 class="title">Tea</h1>
+                        <div class="row">
+                            <div
+                                v-for="item in tea_product.objects"
+                                :key="item.id"
+                                class="col-4"
+                            >
+                                <picture>
+                                    <img
+                                        :src="`../../_nuxt/${item.link_image}`"
+                                        alt=""
+                                    />
+                                    <a
+                                        href="#"
+                                        class="image-content text-center"
+                                        >{{ item.title }}</a
+                                    >
+                                </picture>
+                            </div>
+                        </div>
                     </div>
 
-                    <h1 class="title">Tea</h1>
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/rooibos-tea.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Rooibos tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/royal-milk-tea.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Royal milk tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/matcha-latte.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Matcha tea</a>
-                        </picture>
-                    </div>
-
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/apple.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Apple tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/peach-jiuce.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Peach tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/orange.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Orange tea</a>
-                        </picture>
-                    </div>
-
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/coffee/690_690/iced_drink/bubble_milk.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bubble milk tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/coffee/690_690/iced_drink/bubble_milk_tea.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bubble matcha milk tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/coffee/690_690/iced_drink/iced_coffe.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Special tea</a>
-                        </picture>
-                    </div>
-
-                    <h1 class="title">Cake</h1>
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/bake-cheese-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bake cheese cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Chocolate crepe cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/mille-crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Mille crepe cake</a>
-                        </picture>
-                    </div>
-
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/bake-cheese-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bake cheese cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Chocolate crepe cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/mille-crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Mille crepe cake</a>
-                        </picture>
-                    </div>
-
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/bake-cheese-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bake cheese cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Chocolate crepe cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/mille-crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Mille crepe cake</a>
-                        </picture>
+                    <div>
+                        <h1 class="title">Cake</h1>
+                        <div class="row">
+                            <div
+                                v-for="item in cake_product.objects"
+                                :key="item.id"
+                                class="col-4"
+                            >
+                                <picture>
+                                    <img
+                                        :src="`../../_nuxt/${item.link_image}`"
+                                        alt=""
+                                    />
+                                    <a
+                                        href="#"
+                                        class="image-content text-center"
+                                        >{{ item.title }}</a
+                                    >
+                                </picture>
+                            </div>
+                        </div>
                     </div>
                 </main>
             </div>
