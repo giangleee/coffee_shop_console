@@ -162,12 +162,15 @@
                     <a href="">Privacy Policy</a> of this site
                 </div>
                 <div class="col-12">
-                  
                     <button type="submit" class="btn btn-primary">
                         Submit
                     </button>
-                    <div v-if="response.name !== undefined " class="valid-feedback" style="display: block">
-                      We have recive your feedback!! Thanks you so much 
+                    <div
+                        v-if="response.name !== undefined"
+                        class="valid-feedback"
+                        style="display: block"
+                    >
+                        We have recive your feedback!! Thanks you so much
                     </div>
                 </div>
             </form>

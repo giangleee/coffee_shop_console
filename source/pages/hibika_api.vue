@@ -83,7 +83,7 @@
                     <div class="box">
                         <div class="slide-img">
                             <img
-                                :src="`../_nuxt/${item.link_image}`"
+                                :src="`../_nuxt/assets/images${item.link_image}`"
                                 alt="img-1"
                             />
                         </div>
@@ -343,7 +343,6 @@
 
 <script>
 import 'bootstrap/dist/css/bootstrap.css'
-
 export default {
     layout: 'AuthPage',
     data() {
@@ -351,6 +350,7 @@ export default {
             slide: 0,
             sliding: null,
             favorite: '',
+            images: [],
         }
     },
     head() {
@@ -358,6 +358,9 @@ export default {
     },
     created() {
         this.getFavoriteProductApi()
+    },
+    mounted() {
+        this.importAll(require.context('../assets/images/', true))
     },
     methods: {
         onSlideStart(slide) {
@@ -369,19 +372,26 @@ export default {
         async getFavoriteProductApi() {
             this.favorite = await this.$axios.$get('/product/favorite')
         },
+        importAll(r) {
+            r.keys().forEach((key) =>
+                this.images.push({ pathLong: r(key), pathShort: key })
+            )
+        },
     },
 }
 </script>
 
 <style lang="scss" scoped>
 @import '../style/pages/index.scss';
-
 .lSAction > a {
     background-image: url(../assets/images/controls.png) !important;
 }
-
 .loop {
     display: flex;
     justify-content: center;
+}
+#main .about {
+    font-family: '游明朝体', 'Yu Mincho', YuMincho, 'ヒラギノ明朝 Pro',
+        'Hiragino Mincho Pro', 'MS P明朝', 'MS PMincho', serif !important;
 }
 </style>

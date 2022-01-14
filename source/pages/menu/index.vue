@@ -190,21 +190,27 @@
                                 src="../../assets/images/coffee/690_690/latte.jpg"
                                 alt=""
                             />
-                            <a href="#" class="image-content text-center">Latte</a>
+                            <a href="#" class="image-content text-center"
+                                >Latte</a
+                            >
                         </picture>
                         <picture class="col-4">
                             <img
                                 src="../../assets/images/coffee/690_690/blend.jpg"
                                 alt=""
                             />
-                            <a href="#" class="image-content text-center">Capuchino</a>
+                            <a href="#" class="image-content text-center"
+                                >Capuchino</a
+                            >
                         </picture>
                         <picture class="col-4">
                             <img
                                 src="../../assets/images/coffee/690_690/mocha.jpg"
                                 alt=""
                             />
-                            <a href="#" class="image-content text-center">Mocha</a>
+                            <a href="#" class="image-content text-center"
+                                >Mocha</a
+                            >
                         </picture>
                     </div>
                     <div class="row">
@@ -213,21 +219,27 @@
                                 src="../../assets/images/coffee/690_690/blend.jpg"
                                 alt=""
                             />
-                            <a href="#" class="image-content text-center">Blend</a>
+                            <a href="#" class="image-content text-center"
+                                >Blend</a
+                            >
                         </picture>
                         <picture class="col-4">
                             <img
                                 src="../../assets/images/coffee/690_690/matcha_latte.jpg"
                                 alt=""
                             />
-                            <a href="#" class="image-content text-center">Matcha latte</a>
+                            <a href="#" class="image-content text-center"
+                                >Matcha latte</a
+                            >
                         </picture>
                         <picture class="col-4">
                             <img
                                 src="../../assets/images/coffee/690_690/presso.jpg"
                                 alt=""
                             />
-                            <a href="#" class="image-content text-center">Presso</a>
+                            <a href="#" class="image-content text-center"
+                                >Presso</a
+                            >
                         </picture>
                     </div>
 
@@ -237,113 +249,209 @@
                                 src="../../assets/images/coffee/690_690/20191031123921.jpg"
                                 alt=""
                             />
-                            <a href="#" class="image-content text-center">Special</a>
+                            <a href="#" class="image-content text-center"
+                                >Special</a
+                            >
                         </picture>
                         <picture class="col-4">
                             <img
                                 src="../../assets/images/coffee/690_690/blend.jpg"
                                 alt=""
                             />
-                            <a href="#" class="image-content text-center">Kopi Luwak</a>
+                            <a href="#" class="image-content text-center"
+                                >Kopi Luwak</a
+                            >
                         </picture>
                         <picture class="col-4">
                             <img
                                 src="../../assets/images/coffee/690_690/latte.jpg"
                                 alt=""
                             />
-                            <a href="#" class="image-content text-center">Macchiato</a>
+                            <a href="#" class="image-content text-center"
+                                >Macchiato</a
+                            >
                         </picture>
                     </div>
 
                     <h1 class="title">Tea</h1>
                     <div class="row">
                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/rooibos-tea.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Rooibos tea</a>
+                            <img
+                                src="../../assets/images/tea/690.690/rooibos-tea.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Rooibos tea</a
+                            >
                         </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/royal-milk-tea.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Royal milk tea</a>
+                        <picture class="col-4">
+                            <img
+                                src="../../assets/images/tea/690.690/royal-milk-tea.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Royal milk tea</a
+                            >
                         </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/matcha-latte.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Matcha tea</a>
+                        <picture class="col-4">
+                            <img
+                                src="../../assets/images/tea/690.690/matcha-latte.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Matcha tea</a
+                            >
                         </picture>
                     </div>
 
                     <div class="row">
                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/apple.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Apple tea</a>
+                            <img
+                                src="../../assets/images/tea/690.690/apple.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Apple tea</a
+                            >
                         </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/peach-jiuce.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Peach tea</a>
+                        <picture class="col-4">
+                            <img
+                                src="../../assets/images/tea/690.690/peach-jiuce.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Peach tea</a
+                            >
                         </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/orange.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Orange tea</a>
+                        <picture class="col-4">
+                            <img
+                                src="../../assets/images/tea/690.690/orange.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Orange tea</a
+                            >
                         </picture>
                     </div>
 
                     <div class="row">
                         <picture class="col-4">
-                            <img src="../../assets/images/coffee/690_690/iced_drink/bubble_milk.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bubble milk tea</a>
+                            <img
+                                src="../../assets/images/coffee/690_690/iced_drink/bubble_milk.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Bubble milk tea</a
+                            >
                         </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/coffee/690_690/iced_drink/bubble_milk_tea.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bubble matcha milk tea</a>
+                        <picture class="col-4">
+                            <img
+                                src="../../assets/images/coffee/690_690/iced_drink/bubble_milk_tea.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Bubble matcha milk tea</a
+                            >
                         </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/coffee/690_690/iced_drink/iced_coffe.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Special tea</a>
+                        <picture class="col-4">
+                            <img
+                                src="../../assets/images/coffee/690_690/iced_drink/iced_coffe.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Special tea</a
+                            >
                         </picture>
                     </div>
 
                     <h1 class="title">Cake</h1>
                     <div class="row">
                         <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/bake-cheese-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bake cheese cake</a>
+                            <img
+                                src="../../assets/images/cake/690.690/bake-cheese-cake.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Bake cheese cake</a
+                            >
                         </picture>
                         <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Chocolate crepe cake</a>
+                            <img
+                                src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Chocolate crepe cake</a
+                            >
                         </picture>
                         <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/mille-crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Mille crepe cake</a>
+                            <img
+                                src="../../assets/images/cake/690.690/mille-crepe-cake.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Mille crepe cake</a
+                            >
                         </picture>
                     </div>
 
                     <div class="row">
                         <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/bake-cheese-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bake cheese cake</a>
+                            <img
+                                src="../../assets/images/cake/690.690/bake-cheese-cake.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Bake cheese cake</a
+                            >
                         </picture>
                         <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Chocolate crepe cake</a>
+                            <img
+                                src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Chocolate crepe cake</a
+                            >
                         </picture>
                         <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/mille-crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Mille crepe cake</a>
+                            <img
+                                src="../../assets/images/cake/690.690/mille-crepe-cake.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Mille crepe cake</a
+                            >
                         </picture>
                     </div>
 
                     <div class="row">
                         <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/bake-cheese-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bake cheese cake</a>
+                            <img
+                                src="../../assets/images/cake/690.690/bake-cheese-cake.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Bake cheese cake</a
+                            >
                         </picture>
                         <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Chocolate crepe cake</a>
+                            <img
+                                src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Chocolate crepe cake</a
+                            >
                         </picture>
                         <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/mille-crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Mille crepe cake</a>
+                            <img
+                                src="../../assets/images/cake/690.690/mille-crepe-cake.jpg"
+                                alt=""
+                            />
+                            <a href="#" class="image-content text-center"
+                                >Mille crepe cake</a
+                            >
                         </picture>
                     </div>
                 </main>
@@ -398,6 +506,6 @@ export default {
 @import '../../style/pages/index/main.scss';
 
 .active:before {
-  display: inline;
+    display: inline;
 }
 </style>

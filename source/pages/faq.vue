@@ -168,11 +168,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 export default {
     layout: 'AuthPage',
-    head(){
-    return {
-      title: 'HIBIKA|FAQ'
-      }
-  },
+    head() {
+        return {
+            title: 'HIBIKA|FAQ',
+        }
+    },
 }
 </script>
 

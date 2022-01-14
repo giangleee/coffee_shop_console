@@ -55,16 +55,16 @@
 </template>
 
 <script>
-export default ({
-   layout: 'AuthPage',
-     head(){
-    return {
-      title: 'HIBIKA|Privacy Policy'
-      }
-  },
-})
+export default {
+    layout: 'AuthPage',
+    head() {
+        return {
+            title: 'HIBIKA|Privacy Policy',
+        }
+    },
+}
 </script>
 
 <style lang="scss" scoped>
-  @import '../style/pages/term-of-use.scss';
+@import '../style/pages/term-of-use.scss';
 </style>
