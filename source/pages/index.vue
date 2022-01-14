@@ -25,7 +25,7 @@
             </b-carousel>
         </div>
 
-        <div id="news" class="about" >
+        <div id="news" class="about">
             <h2 class="about-title">
                 春夏秋冬、季節ごとに装いが移り変わる<br />
                 “HIBIKAの四季菓子”
@@ -70,116 +70,34 @@
                 </a>
             </div>
         </div>
-        <div class="favorite">
-            <h2 class="title">FAVORITE</h2>
-            <section class="slider">
-                <infinite-slide-bar
-                    duration="35s"
-                    direction="reverse"
-                    delay="10s"
-                    :bar-style="{ padding: '5px 0' }"
-                >
-                    <div class="box">
-                        <div class="slide-img">
-                            <img
-                                src="../assets/images/coffee/690_690/blend.jpg"
-                                alt="img-1"
-                            />
-                        </div>
-                        <div class="detail-box">
-                            <div class="type">
-                                <a href="#">Blend</a>
-                                <span>Information</span>
-                            </div>
-                            <p class="price">$5</p>
-                        </div>
-                    </div>
 
-                    <div class="box">
-                        <div class="slide-img">
-                            <img
-                                src="../assets/images/coffee/690_690/capuchino.jpg"
-                                alt="img-1"
-                            />
-                        </div>
-                        <div class="detail-box">
-                            <div class="type">
-                                <a href="#">Capuchino</a>
-                                <span>Information</span>
-                            </div>
-                            <p class="price">$5</p>
-                        </div>
-                    </div>
+        <h2 class="title">FAVORITE</h2>
 
+        <infinite-slide-bar
+            duration="35s"
+            direction="reverse"
+            :bar-style="{ padding: '5px 0' }"
+        >
+            <div class="loop">
+                <div v-for="item in favorite.objects" :key="item.id">
                     <div class="box">
                         <div class="slide-img">
                             <img
-                                src="../assets/images/coffee/690_690/matcha _latte.jpg"
+                                :src="`../_nuxt/${item.link_image}`"
                                 alt="img-1"
                             />
                         </div>
                         <div class="detail-box">
                             <div class="type">
-                                <a href="#">Matcha latte</a>
-                                <span>Information</span>
+                                <a href="#">{{ item.title }}</a>
+                                <span>{{ item.description }}</span>
                             </div>
-                            <p class="price">$5</p>
+                            <p class="price">$ {{ item.price }}</p>
                         </div>
                     </div>
-
-                    <div class="box">
-                        <div class="slide-img">
-                            <img
-                                src="../assets/images/coffee/690_690/mocha.jpg"
-                                alt="img-1"
-                            />
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="detail-box">
-                            <div class="type">
-                                <a href="#">Mocha</a>
-                                <span>Information</span>
-                            </div>
-                            <p class="price">$5</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="slide-img">
-                            <img
-                                src="../assets/images/coffee/690_690/presso.jpg"
-                                alt="img-1"
-                            />
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="detail-box">
-                            <div class="type">
-                                <a href="#">Presso</a>
-                                <span>Information</span>
-                            </div>
-                            <p class="price">$5</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="slide-img">
-                            <img
-                                src="../assets/images/coffee/690_690/20191031123921.jpg"
-                                alt="img-1"
-                            />
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="detail-box">
-                            <div class="type">
-                                <a href="#">Special</a>
-                                <span>Information</span>
-                            </div>
-                            <p class="price">$5</p>
-                        </div>
-                    </div>
-                </infinite-slide-bar>
-            </section>
-        </div>
+                </div>
+            </div>
+        </infinite-slide-bar>
 
         <div class="story frame-margin">
             <h5 class="title text-center">STORIES</h5>
@@ -432,10 +350,14 @@ export default {
         return {
             slide: 0,
             sliding: null,
+            favorite: '',
         }
     },
     head() {
-      return {title: 'HIBIKA|Best place to drink'}
+        return { title: 'HIBIKA|Best place to drink' }
+    },
+    created() {
+        this.getFavoriteProductApi()
     },
     methods: {
         onSlideStart(slide) {
@@ -444,6 +366,9 @@ export default {
         onSlideEnd(slide) {
             this.sliding = false
         },
+        async getFavoriteProductApi() {
+            this.favorite = await this.$axios.$get('/product/favorite')
+        },
     },
 }
 </script>
@@ -451,12 +376,12 @@ export default {
 <style lang="scss" scoped>
 @import '../style/pages/index.scss';
 
-
 .lSAction > a {
     background-image: url(../assets/images/controls.png) !important;
 }
 
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+.loop {
+    display: flex;
+    justify-content: center;
 }
 </style>
