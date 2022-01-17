@@ -41,8 +41,8 @@
             </p>
 
             <div class="about-more">
-                <a href="#" class="about-more-link">
-                    <div class="about-more-inside">
+                <NuxtLink class="about-more-link" to="/menu">
+                 <div class="about-more-inside">
                         <div class="about-more-img">
                             <img
                                 src="../assets/images/about_more.jpg"
@@ -67,7 +67,8 @@
                             </p>
                         </div>
                     </div>
-                </a>
+                
+                </NuxtLink>
             </div>
         </div>
 
@@ -344,9 +345,8 @@
                         <!--End teaholic-->
                     </div>
                 </div>
-            </div>
 
-            <div class="blog">
+                 <div class="blog">
                 <div class="coffeeholic">
                     <h3 class="story-title-2"><a href="">Blog</a></h3>
                     <div class="coffeeholic-box">
@@ -420,6 +420,9 @@
                     </div>
                 </div>
             </div>
+            </div>
+
+           
         </div>
     </div>
 </template>
