@@ -1,7 +1,21 @@
+* {
+  font-size: 1.2rem;
+}
+
 header {
   background-color: #faf8f5 !important;
-
 }
+
+header picture {
+  width: 6%;
+  position: absolute;
+  left: 15%;
+  top: 0.6%;
+  z-index: 9999;
+  float: left !important;
+}
+
+
 
 header button.navbar-toggler {
   display: none !important;
@@ -23,19 +37,13 @@ header ul li {
   margin: 0px 22px;
 }
 
-header picture {
-  width: 5%;
-  position: absolute;
-  left: 25%;
-  top: 5%;
-  z-index: 9999;
-}
+
 
 header ul li .nuxtlink {
   font-family: 'Lora', '游明朝体', 'Yu Mincho', YuMincho, 'ヒラギノ明朝 Pro',
     'Hiragino Mincho Pro', 'MS P明朝', 'MS PMincho', serif;
   cursor: pointer;
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #5d261b !important;
   transition: opacity 0.4s ease-in-out !important;
 }
@@ -75,6 +83,8 @@ header .btn:focus {
   header picture {
     width: 10%;
     position: static;
+    margin-left: 27px;
+    margin-top: 6px;
   }
 
   header nav {

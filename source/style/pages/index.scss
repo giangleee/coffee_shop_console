@@ -35,7 +35,7 @@ a:hover{
 }
 
 .about .about-content {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	line-height: 2rem;
 	font-weight: 400;
 	color: #5d261b;
@@ -47,7 +47,7 @@ a:hover{
 
 .about-more {
 	margin-bottom: 9.375rem;
-	max-width: 1040px;
+	max-width: 1240px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -68,7 +68,6 @@ a:hover{
 .about .about-more-img {
 	width: 62.5%;
 	float: left;
-	
 }
 
 .about .about-more-info {
@@ -97,7 +96,7 @@ a:hover{
 }
 
 .about-more-content {
-	font-size: 13px;
+	font-size: 1rem;
 }
 
 
@@ -425,4 +424,11 @@ a:hover{
 		margin-right: 80px;
 		margin-left: 80px;
 	}
+}
+
+@media screen and (min-width: 1480px) {
+	.story-content{
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
 }

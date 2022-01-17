@@ -1,10 +1,13 @@
 <template>
     <header>
+      <picture>
+        <img src="../assets/images/logo.svg" alt="" />
+      </picture>
         <nav class="navbar navbar-light">
             <div class="container-fluid justify-content-center">
-                <picture>
+                <!-- <picture>
                     <img src="../assets/images/logo.svg" alt="" />
-                </picture>
+                </picture> -->
                 <div class="text-center">
                     <ul class="navbar-nav flex-row mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -20,7 +23,7 @@
                             <NuxtLink class="nuxtlink nav-link" to="/">Story</NuxtLink>
                         </li>
                         <li class="nav-item">
-                           <NuxtLink class="nuxtlink nav-link" to="/contact-form">Contact form</NuxtLink> 
+                           <NuxtLink class="nuxtlink nav-link" to="/contact-form">Contact-form</NuxtLink> 
                         </li>
                         <li class="nav-item" style="padding-top: 10px">
                             <div class="title-job">
