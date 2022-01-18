@@ -37,19 +37,23 @@
         </main>
 
         <section class="feature container">
-            <h1 class="text-center">冬のケーキ</h1>
+            <h1 v-if="mainProduct.category_id === coffee" class="text-center" >おすすめのコーヒ</h1>
+            <h1 v-if="mainProduct.category_id === tea" class="text-center" >おすすめのお茶</h1>
+            <h1 v-if="mainProduct.category_id === cake" class="text-center" >おすすめのケーキ</h1>
             <div class="row">
                 <div
                     v-for="item in product.objects"
                     :key="item.id"
-                    class="col-6 col-lg-3"
+                    class="col-6 col-lg-3 item-list"
                 >
-                    <div>
+                    <div class="">
                         <img
                             :src="`../../../_nuxt/assets/images/${item.link_image}`"
                             alt=""
                         />
-                        <NuxtLink :to="`../detail/${item.id}`" class="text-center">{{ item.title }}</NuxtLink>
+                        <center>
+                          <NuxtLink :to="`../detail/${item.id}`" class="text-center item-link">{{ item.title }}</NuxtLink>
+                        </center>
                     </div>
                 </div>
             </div>
@@ -68,6 +72,9 @@ export default {
             temp: '',
             mainProduct: '',
             slideProduct: '',
+            coffee: 1,
+            tea: 2,
+            cake: 3,
         }
     },
     head() {
