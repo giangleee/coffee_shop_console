@@ -272,36 +272,37 @@
                                 <div class="story-box">
                                     <div class="story-img">
                                         <img
-                                            src="../assets/images/story/blog.jpg"
+                                            src="../assets/images/sensei.png"
                                             alt="story-1"
                                         />
                                     </div>
-                                    <span class="date"> 1/1/2022 <br /> </span>
+                                    <span class="date">
+                                        01/01/2022 <br />
+                                    </span>
                                     <div class="article-title">
                                         <a href="#" class=""
-                                            >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
+                                            >このウェブを作るために私たちを鼓舞する先生.
                                         </a>
                                     </div>
                                     <p class="article-content">
-                                        いにしえより、私たちにっぽん人は
-                                        移ろいゆく四季とともに、
-                                        その情緒を愉しみながら暮らしてきました。。。
+                                        同じコーヒーへの愛情を込めて、このウェブサイトを作成しました。
+                                        このウェブサイトが将来コーヒー愛好家によって使用されることを願っています.
                                     </p>
                                 </div>
                             </div>
 
                             <div class="col-none-12 col-md-6 col-lg-4">
                                 <div class="story-box">
-                                    <div class="story-img">
+                                    <div class="story-img text-center">
                                         <img
-                                            src="../assets/images/story/blog.jpg"
+                                            src="../assets/images/sensei_2.jpg"
                                             alt="story-1"
                                         />
                                     </div>
                                     <span class="date"> 1/1/2022 <br /> </span>
                                     <div class="article-title">
                                         <a href="#" class=""
-                                            >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
+                                            >フォン先生はどんな先生ですか。
                                         </a>
                                     </div>
                                     <p class="article-content">
@@ -393,5 +394,10 @@ export default {
 #main .about {
     font-family: '游明朝体', 'Yu Mincho', YuMincho, 'ヒラギノ明朝 Pro',
         'Hiragino Mincho Pro', 'MS P明朝', 'MS PMincho', serif !important;
+}
+
+.story-img img {
+    max-width: 546px !important;
+    max-height: 415px !important;
 }
 </style>

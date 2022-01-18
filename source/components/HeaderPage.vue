@@ -1,8 +1,8 @@
 <template>
     <header>
-      <picture>
-        <img src="../assets/images/logo.svg" alt="" />
-      </picture>
+        <picture>
+            <img src="../assets/images/logo.svg" alt="" />
+        </picture>
         <nav class="navbar navbar-light">
             <div class="container-fluid justify-content-center">
                 <!-- <picture>
@@ -11,19 +11,25 @@
                 <div class="text-center">
                     <ul class="navbar-nav flex-row mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <NuxtLink class="nuxtlink nav-link active" aria-current="page" to="/">Top</NuxtLink>
+                            <NuxtLink
+                                class="nuxtlink nav-link active"
+                                aria-current="page"
+                                to="/"
+                                >Home</NuxtLink
+                            >
                         </li>
                         <li class="nav-item">
-                            <NuxtLink class="nuxtlink nav-link" to="/menu">Menu</NuxtLink>
+                            <NuxtLink class="nuxtlink nav-link" to="/menu"
+                                >Menu</NuxtLink
+                            >
                         </li>
+
                         <li class="nav-item">
-                            <NuxtLink class="nuxtlink nav-link" to="/">News</NuxtLink>
-                        </li>
-                        <li class="nav-item">
-                            <NuxtLink class="nuxtlink nav-link" to="/">Story</NuxtLink>
-                        </li>
-                        <li class="nav-item">
-                           <NuxtLink class="nuxtlink nav-link" to="/contact-form">Contact-form</NuxtLink> 
+                            <NuxtLink
+                                class="nuxtlink nav-link"
+                                to="/contact-form"
+                                >Contact-form</NuxtLink
+                            >
                         </li>
                         <li class="nav-item" style="padding-top: 10px">
                             <div class="title-job">
@@ -86,20 +92,26 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                            <!-- <NuxtLink class="nuxtlink nav-link active" aria-current="page" to="/">Top</NuxtLink> -->
-                        </li>
-                        <li class="nav-item">
-                            <!-- <NuxtLink class="nuxtlink nav-link" to="/menu">Menu</NuxtLink> -->
-                        </li>
-                        <li class="nav-item">
-                            <!-- <NuxtLink class="nuxtlink nav-link" to="/">News</NuxtLink> -->
-                        </li>
-                        <li class="nav-item">
-                            <!-- <NuxtLink class="nuxtlink nav-link" to="/">Story</NuxtLink> -->
-                        </li>
-                        <li class="nav-item">
-                           <!-- <NuxtLink class="nuxtlink nav-link" to="/contact-form">Contact form</NuxtLink>  -->
-                        </li>
+                                <NuxtLink
+                                    class="nuxtlink nav-link active"
+                                    aria-current="page"
+                                    to="/"
+                                    >Home</NuxtLink
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <NuxtLink class="nuxtlink nav-link" to="/menu"
+                                    >Menu</NuxtLink
+                                >
+                            </li>
+
+                            <li class="nav-item">
+                                <NuxtLink
+                                    class="nuxtlink nav-link"
+                                    to="/contact-form"
+                                    >Contact form</NuxtLink
+                                >
+                            </li>
                             <li class="nav-item">
                                 <div class="title-job">
                                     <div

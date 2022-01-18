@@ -57,12 +57,15 @@
                                         align-items-center
                                         rounded
                                         btn
-                                        active
                                     "
                                     data-bs-toggle="collapse"
                                     data-bs-target="#all"
+                                    @click="getDataMenu('all')"
                                 >
-                                    All
+                                    <span
+                                        :class="{ active: active.all === true }"
+                                        >All</span
+                                    >
                                 </button>
                             </li>
                             <li class="mb-1">
@@ -75,33 +78,15 @@
                                     "
                                     data-bs-toggle="collapse"
                                     data-bs-target="#coffee"
+                                    @click="getDataMenu('coffee')"
                                 >
-                                    Coffee
+                                    <span
+                                        :class="{
+                                            active: active.coffee === true,
+                                        }"
+                                        >Coffee</span
+                                    >
                                 </button>
-                                <div id="coffee" class="collapse">
-                                    <ul class="fw-normal pb-1 small">
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Pure Coffee
-                                        </li>
-                                    </ul>
-                                    <ul class="fw-normal pb-1 small">
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Brew Coffee
-                                        </li>
-                                    </ul>
-                                </div>
                             </li>
                             <li class="mb-1">
                                 <button
@@ -113,33 +98,15 @@
                                     "
                                     data-bs-toggle="collapse"
                                     data-bs-target="#tea"
+                                    @click="getDataMenu('tea')"
                                 >
-                                    Tea
+                                    <span
+                                        :class="{
+                                            active: active.tea === true,
+                                        }"
+                                        >Tea</span
+                                    >
                                 </button>
-                                <div id="tea" class="collapse">
-                                    <ul class="fw-normal pb-1 small">
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Pure Tea
-                                        </li>
-                                    </ul>
-                                    <ul class="fw-normal pb-1 small">
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Iced Tea
-                                        </li>
-                                    </ul>
-                                </div>
                             </li>
                             <li class="mb-1">
                                 <button
@@ -151,39 +118,29 @@
                                     "
                                     data-bs-toggle="collapse"
                                     data-bs-target="#cake"
+                                    @click="getDataMenu('cake')"
                                 >
-                                    Cake
+                                    <span
+                                        :class="{
+                                            active: active.cake === true,
+                                        }"
+                                        >Cake</span
+                                    >
                                 </button>
-                                <div id="cake" class="collapse">
-                                    <ul class="fw-normal pb-1 small">
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Pastry
-                                        </li>
-                                    </ul>
-                                    <ul class="fw-normal pb-1 small">
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Tart
-                                        </li>
-                                    </ul>
-                                </div>
                             </li>
                         </ul>
                     </nav>
                 </aside>
                 <main class="bd-main order-1">
-                    <div>
+                    <div
+                        :class="{
+                            block: active.coffee === true,
+                            display:
+                                active.coffee === true ||
+                                active.tea === true ||
+                                active.cake === true,
+                        }"
+                    >
                         <h1 class="title coffee">Coffee</h1>
                         <div class="row">
                             <div
@@ -209,7 +166,15 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div
+                        :class="{
+                            block: active.tea === true,
+                            display:
+                                active.coffee === true ||
+                                active.tea === true ||
+                                active.cake === true,
+                        }"
+                    >
                         <h1 class="title">Tea</h1>
                         <div class="row">
                             <div
@@ -235,7 +200,15 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div
+                        :class="{
+                            block: active.cake === true,
+                            display:
+                                active.coffee === true ||
+                                active.tea === true ||
+                                active.cake === true,
+                        }"
+                    >
                         <h1 class="title">Cake</h1>
                         <div class="row">
                             <div
@@ -275,10 +248,12 @@ export default {
             coffee_product: '',
             tea_product: '',
             cake_product: '',
+            all: 0,
             coffee: 1,
             tea: 2,
             cake: 3,
             images: [],
+            active: { all: true, coffee: false, tea: false, cake: false },
         }
     },
     head() {
@@ -297,19 +272,45 @@ export default {
     methods: {
         async getCoffeeProduct() {
             this.coffee_product = await this.$axios.$get(
-                `/product/${this.coffee}`
+                `/product/category/${this.coffee}`
             )
         },
         async getTeaProduct() {
-            this.tea_product = await this.$axios.$get(`/product/${this.tea}`)
+            this.tea_product = await this.$axios.$get(`/product/category/${this.tea}`)
         },
         async getCakeProduct() {
-            this.cake_product = await this.$axios.$get(`/product/${this.cake}`)
+            this.cake_product = await this.$axios.$get(`/product/category/${this.cake}`)
         },
         importAll(r) {
             r.keys().forEach((key) =>
                 this.images.push({ pathLong: r(key), pathShort: key })
             )
+        },
+        getDataMenu(string) {
+            if (string === 'all') {
+                this.active.all = true
+                this.active.coffee = false
+                this.active.tea = false
+                this.active.cake = false
+            }
+            if (string === 'coffee') {
+                this.active.all = false
+                this.active.coffee = true
+                this.active.tea = false
+                this.active.cake = false
+            }
+            if (string === 'tea') {
+                this.active.all = false
+                this.active.coffee = false
+                this.active.tea = true
+                this.active.cake = false
+            }
+            if (string === 'cake') {
+                this.active.all = false
+                this.active.coffee = false
+                this.active.tea = false
+                this.active.cake = true
+            }
         },
     },
 }
@@ -320,5 +321,11 @@ export default {
 @import '../../style/pages/index/main.scss';
 .active:before {
     display: inline;
+}
+.display {
+    display: none;
+}
+.block {
+    display: block;
 }
 </style>
