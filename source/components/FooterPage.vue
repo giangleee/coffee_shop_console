@@ -5,37 +5,53 @@
                 <div class="col-12 col-lg-3">
                     <h3>About us</h3>
                     <ul>
-                        <li><NuxtLink class="nuxtlink" to="/">Home</NuxtLink></li>
-                        <li><NuxtLink class="nuxtlink" to="../menu">Menu</NuxtLink></li>
-                        <li><NuxtLink class="nuxtlink" to="../contact-form">Contact form</NuxtLink></li>
+                        <li>
+                            <NuxtLink class="nuxtlink" to="/"
+                                >Trang chủ</NuxtLink
+                            >
+                        </li>
+                        <li>
+                            <NuxtLink class="nuxtlink" to="/menu"
+                                >Menu</NuxtLink
+                            >
+                        </li>
+                        <li>
+                            <NuxtLink class="nuxtlink" to="/contact-form"
+                                >Liên hệ</NuxtLink
+                            >
+                        </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-3">
                     <h3>Terms</h3>
                     <ul>
                         <li>
-                            <NuxtLink class="nuxtlink" to="../term-of-use">Terms of Use</NuxtLink>
-                          </li>
-                        <li>
-                          <NuxtLink class="nuxtlink" to="../privacy-policy">Privacy Policy</NuxtLink>
+                            <NuxtLink class="nuxtlink" to="/term-of-use"
+                                >Điều khoản sử dụng</NuxtLink
+                            >
                         </li>
                         <li>
-                          <NuxtLink class="nuxtlink" to="../faq">FAQ</NuxtLink>
+                            <NuxtLink class="nuxtlink" to="/privacy-policy"
+                                >Chính sách bảo mật</NuxtLink
+                            >
+                        </li>
+                        <li>
+                            <NuxtLink class="nuxtlink" to="/faq">FAQ</NuxtLink>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-3">
                     <h3>
                         <img src="../assets/images/phone-icon.png" alt="" />
-                        Order number: 1800 6936
+                        Điện thoạt đặt hàng: 1800 6936
                     </h3>
                     <h3>
                         <img src="../assets/images/location-icon.png" alt="" />
-                        Contact
+                        Liên hệ
                     </h3>
                     <p>
-                        3rd-4th floor Hub Building 195/10E Dien Bien Phu, P.15 ,
-                        Binh Thanh district, Ho Chi Minh city
+                        Tầng 3-4 Hub Building 195/10E Điện Biên Phủ, P.15 , Quận
+                        Bình Thạnh, thành phố Hồ Chí Minh
                     </p>
                 </div>
                 <div class="col-12 col-lg-3">

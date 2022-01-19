@@ -3,24 +3,23 @@
         <main class="detail-item container">
             <div class="row">
                 <div class="col-7">
-                    <h1>冬霞<span> ふゆがすみ</span></h1>
+                    <h1>Sương mù mùa đông</h1>
                     <p class="style-color">{{ mainProduct.title }}</p>
                     <p class="style-color" style="margin-bottom: 1.875rem">
                         {{ mainProduct.description }}
                     </p>
+                    <h3>Thông tin chung</h3>
                     <div class="table-item-detail">
                         <dl>
-                            <dt>サイズ</dt>
-                            <dd class="text-start">直径60mm × 高さ60mm</dd>
-                            <dt>販売期間</dt>
-                            <dd class="text-start">2021/11/17～2022/2/28</dd>
-                            <dt>価格</dt>
+                            <dt>Kích cỡ</dt>
                             <dd class="text-start">
-                                $ {{ mainProduct.price }}（本体価格￥694)
+                                Đường kính 60mm x Cao 60mm
                             </dd>
-                            <dt>特定原材料等</dt>
+                            <dt>Thời gian bán hàng</dt>
+                            <dd class="text-start">2021/11/17～2022/2/28</dd>
+                            <dt>Giá</dt>
                             <dd class="text-start">
-                                小麦,卵,乳成分,アーモンド,ゼラチン,大豆,りんご
+                                $ {{ mainProduct.price }}
                             </dd>
                         </dl>
                     </div>
@@ -37,9 +36,15 @@
         </main>
 
         <section class="feature container">
-            <h1 v-if="mainProduct.category_id === coffee" class="text-center" >おすすめのコーヒ</h1>
-            <h1 v-if="mainProduct.category_id === tea" class="text-center" >おすすめのお茶</h1>
-            <h1 v-if="mainProduct.category_id === cake" class="text-center" >おすすめのケーキ</h1>
+            <h1 v-if="mainProduct.category_id === coffee" class="text-center">
+                Sản phẩm caffee đề xuất
+            </h1>
+            <h1 v-if="mainProduct.category_id === tea" class="text-center">
+                Sản phẩm trà đề xuất
+            </h1>
+            <h1 v-if="mainProduct.category_id === cake" class="text-center">
+                Sản phẩm bánh đề xuất
+            </h1>
             <div class="row">
                 <div
                     v-for="item in product.objects"
@@ -48,11 +53,15 @@
                 >
                     <div class="">
                         <img
-                            :src="`../../../_nuxt/assets/images/${item.link_image}`"
+                            :src="`../../../_nuxt/assets/images${item.link_image}`"
                             alt=""
                         />
                         <center>
-                          <NuxtLink :to="`../detail/${item.id}`" class="text-center item-link">{{ item.title }}</NuxtLink>
+                            <NuxtLink
+                                :to="`../detail/${item.id}`"
+                                class="text-center item-link"
+                                >{{ item.title }}</NuxtLink
+                            >
                         </center>
                     </div>
                 </div>

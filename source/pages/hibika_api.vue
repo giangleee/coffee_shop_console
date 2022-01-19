@@ -26,18 +26,21 @@
         </div>
 
         <div id="news" class="about">
-            <h2 class="about-title">
-                春夏秋冬、季節ごとに装いが移り変わる<br />
-                “HIBIKAの四季菓子”
+            <h2 class="about-title text-center">
+                Xuân, hạ, thu, đông, sản phẩm thay đổi theo mùa<br />
+                "Kẹo bốn mùa HIBIKA"
             </h2>
-
-            <p class="about-content">
-                にっぽんの美しい四季の移ろいを洋菓子に込めて。<br />
-                HIBIKAでは、すべてのお菓子が季節限定です。<br />
-                その季節ならではの味わいや香りがあるように。<br />
-                今しか出会えない儚さや情緒にこころ惹かれるものがあるように。<br />
-                HIBIKAのお菓子も季節ごとにラインナップが入れ替わり、その時期だけのお楽しみとしてご用意しています。<br />
-                春夏秋冬、季節ならではの味わいと彩りをちりばめた、折々の四季菓子をご堪能ください。<br />
+            <p class="about-content text-center">
+                Đưa sự chuyển mùa tươi đẹp của bốn mùa Nhật Bản vào bánh kẹo
+                phương Tây.<br />
+                Tại HIBIKA, tất cả đồ ngọt đều có theo mùa.<br />
+                Vì vậy mà có một mùi vị và hương thơm đặc trưng của mùa đó.<br />
+                Cầu mong có điều gì đó thu hút bạn đến với sự mong manh và cảm
+                xúc mà bạn chỉ có thể gặp bây giờ.<br />
+                Dòng sản phẩm kẹo HIBIKA thay đổi theo mùa, và chúng tôi chỉ
+                chuẩn bị cho họ để vui vào thời điểm đó.<br />
+                Trong bốn mùa xuân, hạ, thu, đông, hãy thưởng thức những món đồ
+                ngọt theo mùa mang hương vị và màu sắc riêng của từng mùa.<br />
             </p>
 
             <div class="about-more">
@@ -57,13 +60,17 @@
                                 class="about-logo"
                             />
 
-                            <h4 class="about-more-title">冬の四季菓子</h4>
+                            <h4 class="about-more-title">
+                                Đồ ngọt bốn mùa mùa đông
+                            </h4>
 
                             <p class="about-more-date">11 / 17 ～ 2 / 28</p>
                             <p class="about-more-content">
-                                冬に真っ赤な花を咲かせる寒椿をモチーフにしたケーキや<br />
+                                Những chiếc bánh có họa tiết hoa trà xứ lạnh nở
+                                những bông hoa đỏ tươi vào mùa đông<br />
                                 日本の冬の美しい情景をイメージした焼き菓子など<br />
-                                冬季限定の繊細な味わいをお楽しみください。<br />
+                                Hãy thưởng thức hương vị tinh tế chỉ có trong
+                                mùa đông.<br />
                             </p>
                         </div>
                     </div>
@@ -119,13 +126,15 @@
                                     <span class="date"> 1/1/2022 <br /> </span>
                                     <div class="article-title">
                                         <a href="#" class=""
-                                            >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
+                                            >Đối với một thời gian nhẹ nhàng khi
+                                            đồ ngọt được buộc. "Bánh kẹo Nhật
+                                            Bản" mới
                                         </a>
                                     </div>
                                     <p class="article-content">
-                                        いにしえより、私たちにっぽん人は
-                                        移ろいゆく四季とともに、
-                                        その情緒を愉しみながら暮らしてきました。。。
+                                        Từ xa xưa, người Nhật chúng ta Với sự
+                                        thay đổi bốn mùa Tôi đã sống khi tận
+                                        hưởng cảm xúc đó. .. ..
                                     </p>
                                 </div>
                             </div>
@@ -141,13 +150,15 @@
                                     <span class="date"> 1/1/2022 <br /> </span>
                                     <div class="article-title">
                                         <a href="#" class=""
-                                            >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
+                                            >Đối với một thời gian nhẹ nhàng khi
+                                            đồ ngọt được buộc. "Bánh kẹo Nhật
+                                            Bản" mới
                                         </a>
                                     </div>
                                     <p class="article-content">
-                                        いにしえより、私たちにっぽん人は
-                                        移ろいゆく四季とともに、
-                                        その情緒を愉しみながら暮らしてきました。。。
+                                        Từ xa xưa, người Nhật chúng ta Với sự
+                                        thay đổi bốn mùa Tôi đã sống khi tận
+                                        hưởng cảm xúc đó. .. ..
                                     </p>
                                 </div>
                             </div>
@@ -163,13 +174,15 @@
                                     <span class="date"> 1/1/2022 <br /> </span>
                                     <div class="article-title">
                                         <a href="#" class=""
-                                            >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
+                                            >Đối với một thời gian nhẹ nhàng khi
+                                            đồ ngọt được buộc. "Bánh kẹo Nhật
+                                            Bản" mới
                                         </a>
                                     </div>
                                     <p class="article-content">
-                                        いにしえより、私たちにっぽん人は
-                                        移ろいゆく四季とともに、
-                                        その情緒を愉しみながら暮らしてきました。。。
+                                        Từ xa xưa, người Nhật chúng ta Với sự
+                                        thay đổi bốn mùa Tôi đã sống khi tận
+                                        hưởng cảm xúc đó. .. ..
                                     </p>
                                 </div>
                             </div>
@@ -198,13 +211,15 @@
                                         </span>
                                         <div class="article-title">
                                             <a href="#" class=""
-                                                >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
+                                                >Đối với một thời gian nhẹ nhàng
+                                                khi đồ ngọt được buộc. "Bánh kẹo
+                                                Nhật Bản" mới
                                             </a>
                                         </div>
                                         <p class="article-content">
-                                            いにしえより、私たちにっぽん人は
-                                            移ろいゆく四季とともに、
-                                            その情緒を愉しみながら暮らしてきました。。。
+                                            Từ xa xưa, người Nhật chúng ta Với
+                                            sự thay đổi bốn mùa Tôi đã sống khi
+                                            tận hưởng cảm xúc đó. .. ..
                                         </p>
                                     </div>
                                 </div>
@@ -222,13 +237,15 @@
                                         </span>
                                         <div class="article-title">
                                             <a href="#" class=""
-                                                >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
+                                                >Đối với một thời gian nhẹ nhàng
+                                                khi đồ ngọt được buộc. "Bánh kẹo
+                                                Nhật Bản" mới
                                             </a>
                                         </div>
                                         <p class="article-content">
-                                            いにしえより、私たちにっぽん人は
-                                            移ろいゆく四季とともに、
-                                            その情緒を愉しみながら暮らしてきました。。。
+                                            Từ xa xưa, người Nhật chúng ta Với
+                                            sự thay đổi bốn mùa Tôi đã sống khi
+                                            tận hưởng cảm xúc đó. .. ..
                                         </p>
                                     </div>
                                 </div>
@@ -246,13 +263,15 @@
                                         </span>
                                         <div class="article-title">
                                             <a href="#" class=""
-                                                >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
+                                                >Đối với một thời gian nhẹ nhàng
+                                                khi đồ ngọt được buộc. "Bánh kẹo
+                                                Nhật Bản" mới
                                             </a>
                                         </div>
                                         <p class="article-content">
-                                            いにしえより、私たちにっぽん人は
-                                            移ろいゆく四季とともに、
-                                            その情緒を愉しみながら暮らしてきました。。。
+                                            Từ xa xưa, người Nhật chúng ta Với
+                                            sự thay đổi bốn mùa Tôi đã sống khi
+                                            tận hưởng cảm xúc đó. .. ..
                                         </p>
                                     </div>
                                 </div>
@@ -281,12 +300,16 @@
                                     </span>
                                     <div class="article-title">
                                         <a href="#" class=""
-                                            >このウェブを作るために私たちを鼓舞する先生.
+                                            >Một giáo viên đã truyền cảm hứng
+                                            cho chúng tôi tạo ra trang web này.
                                         </a>
                                     </div>
                                     <p class="article-content">
-                                        同じコーヒーへの愛情を込めて、このウェブサイトを作成しました。
-                                        このウェブサイトが将来コーヒー愛好家によって使用されることを願っています.
+                                        Chúng tôi tạo ra trang web này với tình
+                                        yêu dành cho cùng một loại cà phê. Chúng
+                                        tôi hy vọng trang web này sẽ được những
+                                        người yêu thích cà phê sử dụng trong
+                                        tương lai.
                                     </p>
                                 </div>
                             </div>
@@ -302,13 +325,17 @@
                                     <span class="date"> 1/1/2022 <br /> </span>
                                     <div class="article-title">
                                         <a href="#" class=""
-                                            >フォン先生はどんな先生ですか。
+                                            >Thầy Phương-người truyền cảm hứng
+                                            cho chúng tôi là người như nào?
                                         </a>
                                     </div>
                                     <p class="article-content">
-                                        いにしえより、私たちにっぽん人は
-                                        移ろいゆく四季とともに、
-                                        その情緒を愉しみながら暮らしてきました。。。
+                                        Là một giáo viên bộ môm Hệ thống thông
+                                        tin tại SOICT, với niềm đam mê cà phê
+                                        bất diệt, chúng tôi hi vọng thầy chính
+                                        là hình mãu tương lai của chúng tôi:
+                                        người đồng nghiệp kính mến và người thầy
+                                        mẫu mực
                                     </p>
                                 </div>
                             </div>
@@ -324,13 +351,15 @@
                                     <span class="date"> 1/1/2022 <br /> </span>
                                     <div class="article-title">
                                         <a href="#" class=""
-                                            >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
+                                            >Đối với một thời gian nhẹ nhàng khi
+                                            đồ ngọt được buộc. "Bánh kẹo Nhật
+                                            Bản" mới
                                         </a>
                                     </div>
                                     <p class="article-content">
-                                        いにしえより、私たちにっぽん人は
-                                        移ろいゆく四季とともに、
-                                        その情緒を愉しみながら暮らしてきました。。。
+                                        Từ xa xưa, người Nhật chúng ta Với sự
+                                        thay đổi bốn mùa Tôi đã sống khi tận
+                                        hưởng cảm xúc đó. .. ..
                                     </p>
                                 </div>
                             </div>

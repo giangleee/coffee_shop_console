@@ -15,7 +15,7 @@
                                 class="nuxtlink nav-link active"
                                 aria-current="page"
                                 to="/"
-                                >Home</NuxtLink
+                                >Trang chủ</NuxtLink
                             >
                         </li>
                         <li class="nav-item">
@@ -28,39 +28,8 @@
                             <NuxtLink
                                 class="nuxtlink nav-link"
                                 to="/contact-form"
-                                >Contact-form</NuxtLink
+                                >Liên hệ</NuxtLink
                             >
-                        </li>
-                        <li class="nav-item" style="padding-top: 10px">
-                            <div class="title-job">
-                                <div
-                                    class="
-                                        btn-group btn-toggle
-                                        rounded-pill
-                                        btn-switch
-                                    "
-                                >
-                                    <button
-                                        class="
-                                            active
-                                            btn btn-sm btn-check-active
-                                            rounded-pill
-                                            color-text
-                                        "
-                                    >
-                                        JP
-                                    </button>
-                                    <button
-                                        class="
-                                            btn btn-sm btn-check-unactive
-                                            rounded-pill
-                                            color-text
-                                        "
-                                    >
-                                        EN
-                                    </button>
-                                </div>
-                            </div>
                         </li>
                     </ul>
                 </div>
@@ -96,7 +65,7 @@
                                     class="nuxtlink nav-link active"
                                     aria-current="page"
                                     to="/"
-                                    >Home</NuxtLink
+                                    >Trang chủ</NuxtLink
                                 >
                             </li>
                             <li class="nav-item">
@@ -109,39 +78,8 @@
                                 <NuxtLink
                                     class="nuxtlink nav-link"
                                     to="/contact-form"
-                                    >Contact form</NuxtLink
+                                    >Liên hệ</NuxtLink
                                 >
-                            </li>
-                            <li class="nav-item">
-                                <div class="title-job">
-                                    <div
-                                        class="
-                                            btn-group btn-toggle
-                                            rounded-pill
-                                            btn-switch
-                                        "
-                                    >
-                                        <button
-                                            class="
-                                                active
-                                                btn btn-sm btn-check-active
-                                                rounded-pill
-                                                color-text
-                                            "
-                                        >
-                                            JP
-                                        </button>
-                                        <button
-                                            class="
-                                                btn btn-sm btn-check-unactive
-                                                rounded-pill
-                                                color-text
-                                            "
-                                        >
-                                            EN
-                                        </button>
-                                    </div>
-                                </div>
                             </li>
                         </ul>
                     </div>
