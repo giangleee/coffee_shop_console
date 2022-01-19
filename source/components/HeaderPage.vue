@@ -1,57 +1,35 @@
 <template>
     <header>
+        <picture>
+            <img src="../assets/images/logo.svg" alt="" />
+        </picture>
         <nav class="navbar navbar-light">
             <div class="container-fluid justify-content-center">
-                <picture>
+                <!-- <picture>
                     <img src="../assets/images/logo.svg" alt="" />
-                </picture>
+                </picture> -->
                 <div class="text-center">
                     <ul class="navbar-nav flex-row mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <NuxtLink class="nuxtlink nav-link active" aria-current="page" to="/">Top</NuxtLink>
+                            <NuxtLink
+                                class="nuxtlink nav-link active"
+                                aria-current="page"
+                                to="/"
+                                >Trang chủ</NuxtLink
+                            >
                         </li>
                         <li class="nav-item">
-                            <NuxtLink class="nuxtlink nav-link" to="/menu">Menu</NuxtLink>
+                            <NuxtLink class="nuxtlink nav-link" to="/menu"
+                                >Menu</NuxtLink
+                            >
                         </li>
+
                         <li class="nav-item">
-                            <NuxtLink class="nuxtlink nav-link" to="/">News</NuxtLink>
-                        </li>
-                        <li class="nav-item">
-                            <NuxtLink class="nuxtlink nav-link" to="/">Story</NuxtLink>
-                        </li>
-                        <li class="nav-item">
-                           <NuxtLink class="nuxtlink nav-link" to="/contact-form">Contact form</NuxtLink> 
-                        </li>
-                        <li class="nav-item" style="padding-top: 10px">
-                            <div class="title-job">
-                                <div
-                                    class="
-                                        btn-group btn-toggle
-                                        rounded-pill
-                                        btn-switch
-                                    "
-                                >
-                                    <button
-                                        class="
-                                            active
-                                            btn btn-sm btn-check-active
-                                            rounded-pill
-                                            color-text
-                                        "
-                                    >
-                                        JP
-                                    </button>
-                                    <button
-                                        class="
-                                            btn btn-sm btn-check-unactive
-                                            rounded-pill
-                                            color-text
-                                        "
-                                    >
-                                        EN
-                                    </button>
-                                </div>
-                            </div>
+                            <NuxtLink
+                                class="nuxtlink nav-link"
+                                to="/contact-form"
+                                >Liên hệ</NuxtLink
+                            >
                         </li>
                     </ul>
                 </div>
@@ -83,50 +61,25 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                            <!-- <NuxtLink class="nuxtlink nav-link active" aria-current="page" to="/">Top</NuxtLink> -->
-                        </li>
-                        <li class="nav-item">
-                            <!-- <NuxtLink class="nuxtlink nav-link" to="/menu">Menu</NuxtLink> -->
-                        </li>
-                        <li class="nav-item">
-                            <!-- <NuxtLink class="nuxtlink nav-link" to="/">News</NuxtLink> -->
-                        </li>
-                        <li class="nav-item">
-                            <!-- <NuxtLink class="nuxtlink nav-link" to="/">Story</NuxtLink> -->
-                        </li>
-                        <li class="nav-item">
-                           <!-- <NuxtLink class="nuxtlink nav-link" to="/contact-form">Contact form</NuxtLink>  -->
-                        </li>
+                                <NuxtLink
+                                    class="nuxtlink nav-link active"
+                                    aria-current="page"
+                                    to="/"
+                                    >Trang chủ</NuxtLink
+                                >
+                            </li>
                             <li class="nav-item">
-                                <div class="title-job">
-                                    <div
-                                        class="
-                                            btn-group btn-toggle
-                                            rounded-pill
-                                            btn-switch
-                                        "
-                                    >
-                                        <button
-                                            class="
-                                                active
-                                                btn btn-sm btn-check-active
-                                                rounded-pill
-                                                color-text
-                                            "
-                                        >
-                                            JP
-                                        </button>
-                                        <button
-                                            class="
-                                                btn btn-sm btn-check-unactive
-                                                rounded-pill
-                                                color-text
-                                            "
-                                        >
-                                            EN
-                                        </button>
-                                    </div>
-                                </div>
+                                <NuxtLink class="nuxtlink nav-link" to="/menu"
+                                    >Menu</NuxtLink
+                                >
+                            </li>
+
+                            <li class="nav-item">
+                                <NuxtLink
+                                    class="nuxtlink nav-link"
+                                    to="/contact-form"
+                                    >Liên hệ</NuxtLink
+                                >
                             </li>
                         </ul>
                     </div>

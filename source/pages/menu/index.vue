@@ -2,17 +2,21 @@
     <section>
         <div class="about margintop">
             <h2 class="about-title text-center">
-                春夏秋冬、季節ごとに装いが移り変わる<br />
-                “HIBIKAの四季菓子”
+                Xuân, hạ, thu, đông, sản phẩm thay đổi theo mùa<br />
+                "Kẹo bốn mùa HIBIKA"
             </h2>
 
             <p class="about-content text-center">
-                にっぽんの美しい四季の移ろいを洋菓子に込めて。<br />
-                HIBIKAでは、すべてのお菓子が季節限定です。<br />
-                その季節ならではの味わいや香りがあるように。<br />
-                今しか出会えない儚さや情緒にこころ惹かれるものがあるように。<br />
-                HIBIKAのお菓子も季節ごとにラインナップが入れ替わり、その時期だけのお楽しみとしてご用意しています。<br />
-                春夏秋冬、季節ならではの味わいと彩りをちりばめた、折々の四季菓子をご堪能ください。<br />
+                Đưa sự chuyển mùa tươi đẹp của bốn mùa Nhật Bản vào bánh kẹo
+                phương Tây.<br />
+                Tại HIBIKA, tất cả đồ ngọt đều có theo mùa.<br />
+                Vì vậy mà có một mùi vị và hương thơm đặc trưng của mùa đó.<br />
+                Cầu mong có điều gì đó thu hút bạn đến với sự mong manh và cảm
+                xúc mà bạn chỉ có thể gặp bây giờ.<br />
+                Dòng sản phẩm kẹo HIBIKA thay đổi theo mùa, và chúng tôi chỉ
+                chuẩn bị cho họ để vui vào thời điểm đó.<br />
+                Trong bốn mùa xuân, hạ, thu, đông, hãy thưởng thức những món đồ
+                ngọt theo mùa mang hương vị và màu sắc riêng của từng mùa.<br />
             </p>
 
             <div class="about-more">
@@ -32,13 +36,13 @@
                                 class="about-logo"
                             />
 
-                            <h4 class="about-more-title">冬の四季菓子</h4>
+                            <h4 class="about-more-title">Đồ ngọt bốn mùa mùa đông</h4>
 
                             <p class="about-more-date">11 / 17 ～ 2 / 28</p>
                             <p class="about-more-content">
-                                冬に真っ赤な花を咲かせる寒椿をモチーフにしたケーキや<br />
+                                Những chiếc bánh có họa tiết hoa trà xứ lạnh nở những bông hoa đỏ tươi vào mùa đông<br />
                                 日本の冬の美しい情景をイメージした焼き菓子など<br />
-                                冬季限定の繊細な味わいをお楽しみください。<br />
+                                Hãy thưởng thức hương vị tinh tế chỉ có trong mùa đông.<br />
                             </p>
                         </div>
                     </div>
@@ -57,12 +61,15 @@
                                         align-items-center
                                         rounded
                                         btn
-                                        active
                                     "
                                     data-bs-toggle="collapse"
                                     data-bs-target="#all"
+                                    @click="getDataMenu('all')"
                                 >
-                                    All
+                                    <span
+                                        :class="{ active: active.all === true }"
+                                        >Tất cả</span
+                                    >
                                 </button>
                             </li>
                             <li class="mb-1">
@@ -75,33 +82,15 @@
                                     "
                                     data-bs-toggle="collapse"
                                     data-bs-target="#coffee"
+                                    @click="getDataMenu('coffee')"
                                 >
-                                    Coffee
+                                    <span
+                                        :class="{
+                                            active: active.coffee === true,
+                                        }"
+                                        >Cà phê</span
+                                    >
                                 </button>
-                                <div id="coffee" class="collapse">
-                                    <ul class="fw-normal pb-1 small">
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Pure Coffee
-                                        </li>
-                                    </ul>
-                                    <ul class="fw-normal pb-1 small">
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Brew Coffee
-                                        </li>
-                                    </ul>
-                                </div>
                             </li>
                             <li class="mb-1">
                                 <button
@@ -113,33 +102,15 @@
                                     "
                                     data-bs-toggle="collapse"
                                     data-bs-target="#tea"
+                                    @click="getDataMenu('tea')"
                                 >
-                                    Tea
+                                    <span
+                                        :class="{
+                                            active: active.tea === true,
+                                        }"
+                                        >Trà</span
+                                    >
                                 </button>
-                                <div id="tea" class="collapse">
-                                    <ul class="fw-normal pb-1 small">
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Pure Tea
-                                        </li>
-                                    </ul>
-                                    <ul class="fw-normal pb-1 small">
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Iced Tea
-                                        </li>
-                                    </ul>
-                                </div>
                             </li>
                             <li class="mb-1">
                                 <button
@@ -151,200 +122,120 @@
                                     "
                                     data-bs-toggle="collapse"
                                     data-bs-target="#cake"
+                                    @click="getDataMenu('cake')"
                                 >
-                                    Cake
+                                    <span
+                                        :class="{
+                                            active: active.cake === true,
+                                        }"
+                                        >Bánh</span
+                                    >
                                 </button>
-                                <div id="cake" class="collapse">
-                                    <ul class="fw-normal pb-1 small">
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Pastry
-                                        </li>
-                                    </ul>
-                                    <ul class="fw-normal pb-1 small">
-                                        <li
-                                            class="
-                                                d-inline-flex
-                                                align-items-center
-                                                rounded
-                                            "
-                                        >
-                                            Tart
-                                        </li>
-                                    </ul>
-                                </div>
                             </li>
                         </ul>
                     </nav>
                 </aside>
                 <main class="bd-main order-1">
-                    <h1 class="title coffee">Coffee</h1>
-                    <div class="row">
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/latte.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Latte</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/blend.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Capuchino</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/mocha.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Mocha</a>
-                        </picture>
-                    </div>
-                    <div class="row">
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/blend.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Blend</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/matcha_latte.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Matcha latte</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/presso.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Presso</a>
-                        </picture>
+                    <div
+                        :class="{
+                            block: active.coffee === true,
+                            display:
+                                active.coffee === true ||
+                                active.tea === true ||
+                                active.cake === true,
+                        }"
+                    >
+                        <h1 class="title coffee">Cà phê</h1>
+                        <div class="row">
+                            <div
+                                v-for="item in coffee_product.objects"
+                                :key="item.id"
+                                class="col-4"
+                            >
+                                <picture>
+                                    <img
+                                        :src="`../../_nuxt/assets/images${item.link_image}`"
+                                        alt=""
+                                    />
+
+                                    <NuxtLink
+                                        :to="{
+                                            path: `/menu/detail/${item.id}`,
+                                        }"
+                                        class="image-content text-center"
+                                        >{{ item.title }}</NuxtLink
+                                    >
+                                </picture>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="row">
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/20191031123921.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Special</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/blend.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Kopi Luwak</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img
-                                src="../../assets/images/coffee/690_690/latte.jpg"
-                                alt=""
-                            />
-                            <a href="#" class="image-content text-center">Macchiato</a>
-                        </picture>
+                    <div
+                        :class="{
+                            block: active.tea === true,
+                            display:
+                                active.coffee === true ||
+                                active.tea === true ||
+                                active.cake === true,
+                        }"
+                    >
+                        <h1 class="title">Trà</h1>
+                        <div class="row">
+                            <div
+                                v-for="item in tea_product.objects"
+                                :key="item.id"
+                                class="col-4"
+                            >
+                                <picture>
+                                    <img
+                                        :src="`../../_nuxt/assets/images${item.link_image}`"
+                                        alt=""
+                                    />
+                                    <NuxtLink
+                                        :to="{
+                                            path: `/menu/detail/${item.id}`,
+                                            params: { tea_product },
+                                        }"
+                                        class="image-content text-center"
+                                        >{{ item.title }}</NuxtLink
+                                    >
+                                </picture>
+                            </div>
+                        </div>
                     </div>
 
-                    <h1 class="title">Tea</h1>
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/rooibos-tea.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Rooibos tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/royal-milk-tea.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Royal milk tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/matcha-latte.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Matcha tea</a>
-                        </picture>
-                    </div>
-
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/apple.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Apple tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/peach-jiuce.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Peach tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/tea/690.690/orange.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Orange tea</a>
-                        </picture>
-                    </div>
-
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/coffee/690_690/iced_drink/bubble_milk.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bubble milk tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/coffee/690_690/iced_drink/bubble_milk_tea.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bubble matcha milk tea</a>
-                        </picture>
-                         <picture class="col-4">
-                            <img src="../../assets/images/coffee/690_690/iced_drink/iced_coffe.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Special tea</a>
-                        </picture>
-                    </div>
-
-                    <h1 class="title">Cake</h1>
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/bake-cheese-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bake cheese cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Chocolate crepe cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/mille-crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Mille crepe cake</a>
-                        </picture>
-                    </div>
-
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/bake-cheese-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bake cheese cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Chocolate crepe cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/mille-crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Mille crepe cake</a>
-                        </picture>
-                    </div>
-
-                    <div class="row">
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/bake-cheese-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Bake cheese cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/chocolate_crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Chocolate crepe cake</a>
-                        </picture>
-                        <picture class="col-4">
-                            <img src="../../assets/images/cake/690.690/mille-crepe-cake.jpg" alt="" />
-                            <a href="#" class="image-content text-center">Mille crepe cake</a>
-                        </picture>
+                    <div
+                        :class="{
+                            block: active.cake === true,
+                            display:
+                                active.coffee === true ||
+                                active.tea === true ||
+                                active.cake === true,
+                        }"
+                    >
+                        <h1 class="title">Bánh</h1>
+                        <div class="row">
+                            <div
+                                v-for="item in cake_product.objects"
+                                :key="item.id"
+                                class="col-4"
+                            >
+                                <picture>
+                                    <img
+                                        :src="`../../_nuxt/assets/images${item.link_image}`"
+                                        alt=""
+                                    />
+                                    <NuxtLink
+                                        :to="{
+                                            path: `/menu/detail/${item.id}`,
+                                            params: { cake_product },
+                                        }"
+                                        class="image-content text-center"
+                                        >{{ item.title }}</NuxtLink
+                                    >
+                                </picture>
+                            </div>
+                        </div>
                     </div>
                 </main>
             </div>
@@ -354,7 +245,6 @@
 
 <script>
 import 'bootstrap/dist/css/bootstrap.css'
-
 export default {
     layout: 'AuthPage',
     data() {
@@ -362,14 +252,17 @@ export default {
             coffee_product: '',
             tea_product: '',
             cake_product: '',
+            all: 0,
             coffee: 1,
             tea: 2,
             cake: 3,
+            images: [],
+            active: { all: true, coffee: false, tea: false, cake: false },
         }
     },
     head() {
         return {
-            title: 'HIBIKA|Menu',
+            title: 'HIBIKA| Menu',
         }
     },
     created() {
@@ -377,17 +270,55 @@ export default {
         this.getTeaProduct()
         this.getCakeProduct()
     },
+    mounted() {
+        this.importAll(require.context('../../assets/images/', true))
+    },
     methods: {
         async getCoffeeProduct() {
             this.coffee_product = await this.$axios.$get(
-                `/product/${this.coffee}`
+                `/product/category/${this.coffee}`
             )
         },
         async getTeaProduct() {
-            this.tea_product = await this.$axios.$get(`/product/${this.tea}`)
+            this.tea_product = await this.$axios.$get(
+                `/product/category/${this.tea}`
+            )
         },
         async getCakeProduct() {
-            this.cake_product = await this.$axios.$get(`/product/${this.cake}`)
+            this.cake_product = await this.$axios.$get(
+                `/product/category/${this.cake}`
+            )
+        },
+        importAll(r) {
+            r.keys().forEach((key) =>
+                this.images.push({ pathLong: r(key), pathShort: key })
+            )
+        },
+        getDataMenu(string) {
+            if (string === 'all') {
+                this.active.all = true
+                this.active.coffee = false
+                this.active.tea = false
+                this.active.cake = false
+            }
+            if (string === 'coffee') {
+                this.active.all = false
+                this.active.coffee = true
+                this.active.tea = false
+                this.active.cake = false
+            }
+            if (string === 'tea') {
+                this.active.all = false
+                this.active.coffee = false
+                this.active.tea = true
+                this.active.cake = false
+            }
+            if (string === 'cake') {
+                this.active.all = false
+                this.active.coffee = false
+                this.active.tea = false
+                this.active.cake = true
+            }
         },
     },
 }
@@ -396,8 +327,13 @@ export default {
 <style lang="scss" scoped>
 @import '../../style/pages/menu.scss';
 @import '../../style/pages/index/main.scss';
-
 .active:before {
-  display: inline;
+    display: inline;
+}
+.display {
+    display: none;
+}
+.block {
+    display: block;
 }
 </style>

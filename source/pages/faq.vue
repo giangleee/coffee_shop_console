@@ -11,7 +11,7 @@
                     <div class="fqa-inner">
                         <div class="fqa-item">
                             <div class="fqa-title">
-                                <label> 1. FAQ about Company review </label>
+                                <label> 1. FAQ about web </label>
                                 <button
                                     href="#info1"
                                     class="btn-plus"
@@ -41,7 +41,7 @@
                     <div class="fqa-inner">
                         <div class="fqa-item">
                             <div class="fqa-title">
-                                <label> 2. FAQ about CV Review? </label>
+                                <label> 2. Why using Japaness </label>
                                 <button
                                     href="#info2"
                                     class="btn-plus"
@@ -53,15 +53,7 @@
 
                             <div id="info2" class="content collapse">
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy
-                                    text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled
-                                    it to make a type specimen book. It has
-                                    survived not only five centuries, but also
-                                    the leap into electronic typesetting,
-                                    remaining essentially unchanged.
+                                    Because we want to mainly using in Japan
                                 </p>
                             </div>
                         </div>
@@ -71,7 +63,7 @@
                         <div class="fqa-item">
                             <div class="fqa-title">
                                 <label>
-                                    3. FAQ about Al Match for candidate?
+                                    3. Why using Japaness
                                 </label>
                                 <button
                                     href="#info3"
@@ -102,7 +94,7 @@
                         <div class="fqa-item">
                             <div class="fqa-title">
                                 <label>
-                                    4. FAQ about Viet Nam Best IT Companies?
+                                    4. Why using Japaness
                                 </label>
                                 <button
                                     href="#info4"
@@ -132,7 +124,7 @@
                     <div class="fqa-inner">
                         <div class="fqa-item">
                             <div class="fqa-title">
-                                <label> 5. What is status of residence? </label>
+                                <label> 5. Why using Japaness </label>
                                 <button
                                     href="#info5"
                                     class="btn-plus"
@@ -168,11 +160,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 export default {
     layout: 'AuthPage',
-    head(){
-    return {
-      title: 'HIBIKA|FAQ'
-      }
-  },
+    head() {
+        return {
+            title: 'HIBIKA|FAQ',
+        }
+    },
 }
 </script>
 

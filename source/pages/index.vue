@@ -26,22 +26,25 @@
         </div>
 
         <div id="news" class="about">
-            <h2 class="about-title">
-                春夏秋冬、季節ごとに装いが移り変わる<br />
-                “HIBIKAの四季菓子”
+            <h2 class="about-title text-center">
+                Xuân, hạ, thu, đông, sản phẩm thay đổi theo mùa<br />
+                "Kẹo bốn mùa HIBIKA"
             </h2>
-
-            <p class="about-content">
-                にっぽんの美しい四季の移ろいを洋菓子に込めて。<br />
-                HIBIKAでは、すべてのお菓子が季節限定です。<br />
-                その季節ならではの味わいや香りがあるように。<br />
-                今しか出会えない儚さや情緒にこころ惹かれるものがあるように。<br />
-                HIBIKAのお菓子も季節ごとにラインナップが入れ替わり、その時期だけのお楽しみとしてご用意しています。<br />
-                春夏秋冬、季節ならではの味わいと彩りをちりばめた、折々の四季菓子をご堪能ください。<br />
+            <p class="about-content text-center">
+                Đưa sự chuyển mùa tươi đẹp của bốn mùa Nhật Bản vào bánh kẹo
+                phương Tây.<br />
+                Tại HIBIKA, tất cả đồ ngọt đều có theo mùa.<br />
+                Vì vậy mà có một mùi vị và hương thơm đặc trưng của mùa đó.<br />
+                Cầu mong có điều gì đó thu hút bạn đến với sự mong manh và cảm
+                xúc mà bạn chỉ có thể gặp bây giờ.<br />
+                Dòng sản phẩm kẹo HIBIKA thay đổi theo mùa, và chúng tôi chỉ
+                chuẩn bị cho họ để vui vào thời điểm đó.<br />
+                Trong bốn mùa xuân, hạ, thu, đông, hãy thưởng thức những món đồ
+                ngọt theo mùa mang hương vị và màu sắc riêng của từng mùa.<br />
             </p>
 
             <div class="about-more">
-                <a href="#" class="about-more-link">
+                <NuxtLink class="about-more-link" to="/menu">
                     <div class="about-more-inside">
                         <div class="about-more-img">
                             <img
@@ -67,7 +70,7 @@
                             </p>
                         </div>
                     </div>
-                </a>
+                </NuxtLink>
             </div>
         </div>
 
@@ -344,76 +347,82 @@
                         <!--End teaholic-->
                     </div>
                 </div>
-            </div>
 
-            <div class="blog">
-                <div class="coffeeholic">
-                    <h3 class="story-title-2"><a href="">Blog</a></h3>
-                    <div class="coffeeholic-box">
-                        <div class="row coffeeholic-section">
-                            <div class="col-none-12 col-md-6 col-lg-4">
-                                <div class="story-box">
-                                    <div class="story-img">
-                                        <img
-                                            src="../assets/images/story/blog.jpg"
-                                            alt="story-1"
-                                        />
+                <div class="blog">
+                    <div class="coffeeholic">
+                        <h3 class="story-title-2"><a href="">Blog</a></h3>
+                        <div class="coffeeholic-box">
+                            <div class="row coffeeholic-section">
+                                <div class="col-none-12 col-md-6 col-lg-4">
+                                    <div class="story-box">
+                                        <div class="story-img">
+                                            <img
+                                                src="../assets/images/story/blog.jpg"
+                                                alt="story-1"
+                                            />
+                                        </div>
+                                        <span class="date">
+                                            1/1/2022 <br />
+                                        </span>
+                                        <div class="article-title">
+                                            <a href="#" class=""
+                                                >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
+                                            </a>
+                                        </div>
+                                        <p class="article-content">
+                                            いにしえより、私たちにっぽん人は
+                                            移ろいゆく四季とともに、
+                                            その情緒を愉しみながら暮らしてきました。。。
+                                        </p>
                                     </div>
-                                    <span class="date"> 1/1/2022 <br /> </span>
-                                    <div class="article-title">
-                                        <a href="#" class=""
-                                            >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
-                                        </a>
-                                    </div>
-                                    <p class="article-content">
-                                        いにしえより、私たちにっぽん人は
-                                        移ろいゆく四季とともに、
-                                        その情緒を愉しみながら暮らしてきました。。。
-                                    </p>
                                 </div>
-                            </div>
 
-                            <div class="col-none-12 col-md-6 col-lg-4">
-                                <div class="story-box">
-                                    <div class="story-img">
-                                        <img
-                                            src="../assets/images/story/blog.jpg"
-                                            alt="story-1"
-                                        />
+                                <div class="col-none-12 col-md-6 col-lg-4">
+                                    <div class="story-box">
+                                        <div class="story-img">
+                                            <img
+                                                src="../assets/images/story/blog.jpg"
+                                                alt="story-1"
+                                            />
+                                        </div>
+                                        <span class="date">
+                                            1/1/2022 <br />
+                                        </span>
+                                        <div class="article-title">
+                                            <a href="#" class=""
+                                                >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
+                                            </a>
+                                        </div>
+                                        <p class="article-content">
+                                            いにしえより、私たちにっぽん人は
+                                            移ろいゆく四季とともに、
+                                            その情緒を愉しみながら暮らしてきました。。。
+                                        </p>
                                     </div>
-                                    <span class="date"> 1/1/2022 <br /> </span>
-                                    <div class="article-title">
-                                        <a href="#" class=""
-                                            >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
-                                        </a>
-                                    </div>
-                                    <p class="article-content">
-                                        いにしえより、私たちにっぽん人は
-                                        移ろいゆく四季とともに、
-                                        その情緒を愉しみながら暮らしてきました。。。
-                                    </p>
                                 </div>
-                            </div>
 
-                            <div class="col-none-12 col-md-6 col-lg-4">
-                                <div class="story-box">
-                                    <div class="story-img">
-                                        <img
-                                            src="../assets/images/story/blog.jpg"
-                                            alt="story-1"
-                                        />
+                                <div class="col-none-12 col-md-6 col-lg-4">
+                                    <div class="story-box">
+                                        <div class="story-img">
+                                            <img
+                                                src="../assets/images/story/blog.jpg"
+                                                alt="story-1"
+                                            />
+                                        </div>
+                                        <span class="date">
+                                            1/1/2022 <br />
+                                        </span>
+                                        <div class="article-title">
+                                            <a href="#" class=""
+                                                >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
+                                            </a>
+                                        </div>
+                                        <p class="article-content">
+                                            いにしえより、私たちにっぽん人は
+                                            移ろいゆく四季とともに、
+                                            その情緒を愉しみながら暮らしてきました。。。
+                                        </p>
                                     </div>
-                                    <span class="date"> 1/1/2022 <br /> </span>
-                                    <div class="article-title">
-                                        <a href="#" class=""
-                                            >お菓子が結ぶ、やさしい時間に。新しい“にっぽんの洋菓子”
-                                        </a>
-                                    </div>
-                                    <p class="article-content">
-                                        いにしえより、私たちにっぽん人は
-                                        移ろいゆく四季とともに、
-                                        その情緒を愉しみながら暮らしてきました。。。
-                                    </p>
                                 </div>
                             </div>
                         </div>

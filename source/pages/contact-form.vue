@@ -1,13 +1,13 @@
 <template>
     <body>
-        <h1 class="text-center container">CONTACT FORM</h1>
+        <h1 class="text-center container">Liên hệ</h1>
         <div class="container">
             <form class="row g-3" @submit.prevent="submit">
                 <div
                     class="col-md-6"
                     :class="{ 'form-group--error': $v.user.name.$error }"
                 >
-                    <label for="" class="form-label">Name<span> *</span></label>
+                    <label for="" class="form-label">Tên<span> *</span></label>
                     <input
                         id=""
                         v-model.trim="$v.user.name.$model"
@@ -20,14 +20,14 @@
                             class="error"
                             style="color: red"
                         >
-                            Field is required
+                            Yêu cầu nhập tên
                         </div>
                         <div
                             v-if="!$v.user.name.alpha"
                             class="error"
                             style="color: red"
                         >
-                            Must be only text
+                            Trường têt chỉ chứa text
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                         for="inputPassword4"
                         class="form-label"
                         :class="{ 'form-group--error': $v.user.phone.$error }"
-                        >Phone <span>*</span></label
+                        >Số điện thoại <span>*</span></label
                     >
                     <input
                         id="inputPassword4"
@@ -52,14 +52,14 @@
                             class="error"
                             style="color: red"
                         >
-                            Field is required
+                            Yêu cầu nhập số điện thoại
                         </div>
                         <div
                             v-if="!$v.user.phone.numeric"
                             class="error"
                             style="color: red"
                         >
-                            Phone number is invalid
+                            Số điện thoại không hợp lệ
                         </div>
 
                         <div
@@ -71,7 +71,7 @@
                             class="error"
                             style="color: red"
                         >
-                            Must be from 9 to 13 numbers
+                            Từ 9 đến 13 số
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                         for="inputEmail4"
                         class="form-label"
                         :class="{ 'form-group--error': $v.user.email.$error }"
-                        >Email Address <span>*</span></label
+                        >Địa chỉ email <span>*</span></label
                     >
                     <input
                         id="inputEmail4"
@@ -96,14 +96,14 @@
                             class="error"
                             style="color: red"
                         >
-                            Field is required
+                            Yêu cầu nhập email
                         </div>
                         <div
                             v-if="!$v.user.email.email"
                             class="invald-feedback"
                             style="color: red"
                         >
-                            Email is invalid
+                            Email không hợp lệ
                         </div>
                     </div>
                 </div>
@@ -112,15 +112,16 @@
                         for="inputState"
                         class="form-label"
                         :class="{ 'form-group--error': $v.user.option.$error }"
-                        >Choose option below <span>*</span></label
+                        >Chọn vấn đề bạn muốn liên hệ với chúng tôi bên dưới <span>*</span></label
                     >
                     <select
                         id="inputState"
                         v-model.trim="$v.user.option.$model"
                         class="form-select background-style font-style"
                     >
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
+                        <option value="1">Dịch vụ</option>
+                        <option value="2">Thêm thông tin</option>
+                        <option value="3">Khác</option>
                     </select>
                     <div v-if="$v.user.option.$anyError">
                         <div
@@ -128,7 +129,7 @@
                             class="error"
                             style="color: red"
                         >
-                            Must be selected
+                            Hãy lựa chọn 1 trong các vấn đề trên
                         </div>
                     </div>
                 </div>
@@ -139,7 +140,7 @@
                         :class="{
                             'form-group--error': $v.user.feedback.$error,
                         }"
-                        >Message <span>*</span></label
+                        >Tin nhắn phản hồi <span>*</span></label
                     >
                     <textarea
                         id="floatingTextarea2"
@@ -153,21 +154,24 @@
                             class="error"
                             style="color: red"
                         >
-                            Field is required
+                            Yêu cầu nhập trường tin nhắn
                         </div>
                     </div>
                 </div>
                 <div class="text-start color-text">
-                    By submitting this form i accept the
-                    <a href="">Privacy Policy</a> of this site
+                    Bằng việc ấn nút submit, tôi chấp nhận 
+                    <a href="">Điều khoản sử dụng</a> của trang này
                 </div>
                 <div class="col-12">
-                  
                     <button type="submit" class="btn btn-primary">
                         Submit
                     </button>
-                    <div v-if="response.name !== undefined " class="valid-feedback" style="display: block">
-                      We have recive your feedback!! Thanks you so much 
+                    <div
+                        v-if="response.name !== undefined"
+                        class="valid-feedback"
+                        style="display: block"
+                    >
+                        Chúng tôi đã nhận được phản hồi của bạn, xin cảm ơn !!!
                     </div>
                 </div>
             </form>
