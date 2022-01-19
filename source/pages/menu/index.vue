@@ -2,17 +2,21 @@
     <section>
         <div class="about margintop">
             <h2 class="about-title text-center">
-                春夏秋冬、季節ごとに装いが移り変わる<br />
-                “HIBIKAの四季菓子”
+                Xuân, hạ, thu, đông, sản phẩm thay đổi theo mùa<br />
+                "Kẹo bốn mùa HIBIKA"
             </h2>
 
             <p class="about-content text-center">
-                にっぽんの美しい四季の移ろいを洋菓子に込めて。<br />
-                HIBIKAでは、すべてのお菓子が季節限定です。<br />
-                その季節ならではの味わいや香りがあるように。<br />
-                今しか出会えない儚さや情緒にこころ惹かれるものがあるように。<br />
-                HIBIKAのお菓子も季節ごとにラインナップが入れ替わり、その時期だけのお楽しみとしてご用意しています。<br />
-                春夏秋冬、季節ならではの味わいと彩りをちりばめた、折々の四季菓子をご堪能ください。<br />
+                Đưa sự chuyển mùa tươi đẹp của bốn mùa Nhật Bản vào bánh kẹo
+                phương Tây.<br />
+                Tại HIBIKA, tất cả đồ ngọt đều có theo mùa.<br />
+                Vì vậy mà có một mùi vị và hương thơm đặc trưng của mùa đó.<br />
+                Cầu mong có điều gì đó thu hút bạn đến với sự mong manh và cảm
+                xúc mà bạn chỉ có thể gặp bây giờ.<br />
+                Dòng sản phẩm kẹo HIBIKA thay đổi theo mùa, và chúng tôi chỉ
+                chuẩn bị cho họ để vui vào thời điểm đó.<br />
+                Trong bốn mùa xuân, hạ, thu, đông, hãy thưởng thức những món đồ
+                ngọt theo mùa mang hương vị và màu sắc riêng của từng mùa.<br />
             </p>
 
             <div class="about-more">
@@ -32,13 +36,13 @@
                                 class="about-logo"
                             />
 
-                            <h4 class="about-more-title">冬の四季菓子</h4>
+                            <h4 class="about-more-title">Đồ ngọt bốn mùa mùa đông</h4>
 
                             <p class="about-more-date">11 / 17 ～ 2 / 28</p>
                             <p class="about-more-content">
-                                冬に真っ赤な花を咲かせる寒椿をモチーフにしたケーキや<br />
+                                Những chiếc bánh có họa tiết hoa trà xứ lạnh nở những bông hoa đỏ tươi vào mùa đông<br />
                                 日本の冬の美しい情景をイメージした焼き菓子など<br />
-                                冬季限定の繊細な味わいをお楽しみください。<br />
+                                Hãy thưởng thức hương vị tinh tế chỉ có trong mùa đông.<br />
                             </p>
                         </div>
                     </div>
@@ -64,7 +68,7 @@
                                 >
                                     <span
                                         :class="{ active: active.all === true }"
-                                        >All</span
+                                        >Tất cả</span
                                     >
                                 </button>
                             </li>
@@ -84,7 +88,7 @@
                                         :class="{
                                             active: active.coffee === true,
                                         }"
-                                        >Coffee</span
+                                        >Cà phê</span
                                     >
                                 </button>
                             </li>
@@ -104,7 +108,7 @@
                                         :class="{
                                             active: active.tea === true,
                                         }"
-                                        >Tea</span
+                                        >Trà</span
                                     >
                                 </button>
                             </li>
@@ -124,7 +128,7 @@
                                         :class="{
                                             active: active.cake === true,
                                         }"
-                                        >Cake</span
+                                        >Bánh</span
                                     >
                                 </button>
                             </li>
@@ -141,7 +145,7 @@
                                 active.cake === true,
                         }"
                     >
-                        <h1 class="title coffee">Coffee</h1>
+                        <h1 class="title coffee">Cà phê</h1>
                         <div class="row">
                             <div
                                 v-for="item in coffee_product.objects"
@@ -150,13 +154,13 @@
                             >
                                 <picture>
                                     <img
-                                        :src="`../../_nuxt/assets/images/${item.link_image}`"
+                                        :src="`../../_nuxt/assets/images${item.link_image}`"
                                         alt=""
                                     />
 
                                     <NuxtLink
                                         :to="{
-                                            path: `detail/${item.id}`,
+                                            path: `/menu/detail/${item.id}`,
                                         }"
                                         class="image-content text-center"
                                         >{{ item.title }}</NuxtLink
@@ -175,7 +179,7 @@
                                 active.cake === true,
                         }"
                     >
-                        <h1 class="title">Tea</h1>
+                        <h1 class="title">Trà</h1>
                         <div class="row">
                             <div
                                 v-for="item in tea_product.objects"
@@ -184,12 +188,12 @@
                             >
                                 <picture>
                                     <img
-                                        :src="`../../_nuxt/assets/images/${item.link_image}`"
+                                        :src="`../../_nuxt/assets/images${item.link_image}`"
                                         alt=""
                                     />
                                     <NuxtLink
                                         :to="{
-                                            path: `detail/${item.id}`,
+                                            path: `/menu/detail/${item.id}`,
                                             params: { tea_product },
                                         }"
                                         class="image-content text-center"
@@ -209,7 +213,7 @@
                                 active.cake === true,
                         }"
                     >
-                        <h1 class="title">Cake</h1>
+                        <h1 class="title">Bánh</h1>
                         <div class="row">
                             <div
                                 v-for="item in cake_product.objects"
@@ -218,12 +222,12 @@
                             >
                                 <picture>
                                     <img
-                                        :src="`../../_nuxt/assets/images/${item.link_image}`"
+                                        :src="`../../_nuxt/assets/images${item.link_image}`"
                                         alt=""
                                     />
                                     <NuxtLink
                                         :to="{
-                                            path: `detail/${item.id}`,
+                                            path: `/menu/detail/${item.id}`,
                                             params: { cake_product },
                                         }"
                                         class="image-content text-center"
@@ -258,7 +262,7 @@ export default {
     },
     head() {
         return {
-            title: 'HIBIKA|Menu',
+            title: 'HIBIKA| Menu',
         }
     },
     created() {
@@ -276,10 +280,14 @@ export default {
             )
         },
         async getTeaProduct() {
-            this.tea_product = await this.$axios.$get(`/product/category/${this.tea}`)
+            this.tea_product = await this.$axios.$get(
+                `/product/category/${this.tea}`
+            )
         },
         async getCakeProduct() {
-            this.cake_product = await this.$axios.$get(`/product/category/${this.cake}`)
+            this.cake_product = await this.$axios.$get(
+                `/product/category/${this.cake}`
+            )
         },
         importAll(r) {
             r.keys().forEach((key) =>
