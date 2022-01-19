@@ -112,15 +112,16 @@
                         for="inputState"
                         class="form-label"
                         :class="{ 'form-group--error': $v.user.option.$error }"
-                        >Choose option below <span>*</span></label
+                        >Choose the problem you want to contact us below <span>*</span></label
                     >
                     <select
                         id="inputState"
                         v-model.trim="$v.user.option.$model"
                         class="form-select background-style font-style"
                     >
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
+                        <option value="1">Service</option>
+                        <option value="2">More information</option>
+                        <option value="3">Other</option>
                     </select>
                     <div v-if="$v.user.option.$anyError">
                         <div
