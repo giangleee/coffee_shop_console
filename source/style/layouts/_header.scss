@@ -29,8 +29,7 @@ header .container-fluid {
 
 .color-text {
   color: #5d261b;
-  font-family: 'Lora', '游明朝体', 'Yu Mincho', YuMincho, 'ヒラギノ明朝 Pro',
-    'Hiragino Mincho Pro', 'MS P明朝', 'MS PMincho', serif;
+  font-weight: bold;
 }
 
 header ul li {
@@ -40,12 +39,11 @@ header ul li {
 
 
 header ul li .nuxtlink {
-  font-family: 'Lora', '游明朝体', 'Yu Mincho', YuMincho, 'ヒラギノ明朝 Pro',
-    'Hiragino Mincho Pro', 'MS P明朝', 'MS PMincho', serif;
   cursor: pointer;
   font-size: 1.2rem;
   color: #5d261b !important;
   transition: opacity 0.4s ease-in-out !important;
+  font-weight: bold;
 }
 
 header ul li .nuxtlink:hover {

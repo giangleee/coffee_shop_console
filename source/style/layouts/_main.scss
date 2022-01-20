@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+html, body {
+    color: #5D261B;
+    font-family: 'Nunito', sans-serif;
+}
+
 * {
 	margin: 0;
 	padding: 0;
-    font-size: 16px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -43,7 +49,7 @@ body {
 	background: transparent;
 	color: #000000;
 	display: block;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 	font-size: 16px;
 	font-weight: 500; /** Medium **/
 	line-height: 2;

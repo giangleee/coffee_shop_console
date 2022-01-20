@@ -36,12 +36,13 @@
                                 class="about-logo"
                             />
 
-                            <h4 class="about-more-title">Đồ ngọt bốn mùa mùa đông</h4>
+                            <h4 class="about-more-title">Kẹo bốn mùa mùa đông</h4>
 
                             <p class="about-more-date">11 / 17 ～ 2 / 28</p>
                             <p class="about-more-content">
-                                Những chiếc bánh có họa tiết hoa trà xứ lạnh nở những bông hoa đỏ tươi vào mùa đông<br />
-                                日本の冬の美しい情景をイメージした焼き菓子など<br />
+                                Những chiếc bánh có họa tiết hoa trà xứ lạnh<br />
+                                 nở những bông hoa đỏ tươi vào mùa đông<br />
+                                
                                 Hãy thưởng thức hương vị tinh tế chỉ có trong mùa đông.<br />
                             </p>
                         </div>
@@ -154,7 +155,7 @@
                             >
                                 <picture>
                                     <img
-                                        :src="`../../_nuxt/assets/images${item.link_image}`"
+                                        :src="url_file + item.link_image"
                                         alt=""
                                     />
 
@@ -188,7 +189,7 @@
                             >
                                 <picture>
                                     <img
-                                        :src="`../../_nuxt/assets/images${item.link_image}`"
+                                        :src="url_file + item.link_image"
                                         alt=""
                                     />
                                     <NuxtLink
@@ -222,7 +223,7 @@
                             >
                                 <picture>
                                     <img
-                                        :src="`../../_nuxt/assets/images${item.link_image}`"
+                                        :src="url_file + item.link_image"
                                         alt=""
                                     />
                                     <NuxtLink
@@ -258,6 +259,7 @@ export default {
             cake: 3,
             images: [],
             active: { all: true, coffee: false, tea: false, cake: false },
+            url_file: process.env.URL_FILE,
         }
     },
     head() {
