@@ -83,7 +83,7 @@ export default {
     layout: 'AuthPage',
     head() {
         return {
-            title: 'HIBIKA|Terms of use',
+            title: 'HIBIKA| Terms of use',
         }
     },
 }

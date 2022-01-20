@@ -162,7 +162,7 @@ export default {
     layout: 'AuthPage',
     head() {
         return {
-            title: 'HIBIKA|FAQ',
+            title: 'HIBIKA| FAQ',
         }
     },
 }
