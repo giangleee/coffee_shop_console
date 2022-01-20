@@ -210,7 +210,7 @@ export default {
 
     head() {
         return {
-            title: 'HIBIKA|Contact form',
+            title: 'HIBIKA| Contact form',
         }
     },
 

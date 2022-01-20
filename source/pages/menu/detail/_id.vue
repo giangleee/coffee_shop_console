@@ -3,8 +3,8 @@
         <main class="detail-item container">
             <div class="row">
                 <div class="col-7">
-                    <h1>Sương mù mùa đông</h1>
-                    <p class="style-color">{{ mainProduct.title }}</p>
+                    <h1 style="font-weight: bold">{{ mainProduct.title }}</h1>
+                    <p class="style-color" style="font-weight: bold;">Sương mù mùa đông</p>
                     <p class="style-color" style="margin-bottom: 1.875rem">
                         {{ mainProduct.description }}
                     </p>
@@ -19,7 +19,7 @@
                             <dd class="text-start">2021/11/17～2022/2/28</dd>
                             <dt>Giá</dt>
                             <dd class="text-start">
-                                $ {{ mainProduct.price }}
+                                {{ mainProduct.price }}đ
                             </dd>
                         </dl>
                     </div>
@@ -27,7 +27,7 @@
                 <div class="col-3">
                     <picture>
                         <img
-                            :src="`../../../_nuxt/assets/images/${mainProduct.link_image}`"
+                            :src="url_file + mainProduct.link_image"
                             alt=""
                         />
                     </picture>
@@ -36,13 +36,13 @@
         </main>
 
         <section class="feature container">
-            <h1 v-if="mainProduct.category_id === coffee" class="text-center">
-                Sản phẩm caffee đề xuất
+            <h1 v-if="mainProduct.category_id === coffee" class="text-center" style="font-weight: bold">
+                Sản phẩm coffee đề xuất
             </h1>
-            <h1 v-if="mainProduct.category_id === tea" class="text-center">
+            <h1 v-if="mainProduct.category_id === tea" class="text-center" style="font-weight: bold">
                 Sản phẩm trà đề xuất
             </h1>
-            <h1 v-if="mainProduct.category_id === cake" class="text-center">
+            <h1 v-if="mainProduct.category_id === cake" class="text-center" style="font-weight: bold">
                 Sản phẩm bánh đề xuất
             </h1>
             <div class="row">
@@ -53,14 +53,14 @@
                 >
                     <div class="">
                         <img
-                            :src="`../../../_nuxt/assets/images${item.link_image}`"
+                            :src="url_file + item.link_image"
                             alt=""
                         />
                         <center>
                             <NuxtLink
                                 :to="`../detail/${item.id}`"
                                 class="text-center item-link"
-                                >{{ item.title }}</NuxtLink
+                                style="font-weight: bold">{{ item.title }}</NuxtLink
                             >
                         </center>
                     </div>
@@ -84,11 +84,13 @@ export default {
             coffee: 1,
             tea: 2,
             cake: 3,
+                        url_file: process.env.URL_FILE,
+
         }
     },
     head() {
         return {
-            title: 'HIBIKA|Detail',
+            title: 'HIBIKA| Detail',
         }
     },
     created() {

@@ -59,7 +59,7 @@ export default {
     layout: 'AuthPage',
     head() {
         return {
-            title: 'HIBIKA|Privacy Policy',
+            title: 'HIBIKA| Privacy Policy',
         }
     },
 }

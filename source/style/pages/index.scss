@@ -1,7 +1,7 @@
 #main {
 	color: #5d261b;
 	background-color: #faf8f5 !important;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 }
 
 /*Common*/
@@ -22,7 +22,7 @@ a:hover{
 #main .about {
 	text-align: center;
 	margin-top: 9.375rem;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 }
 
 .about-title {
@@ -105,7 +105,7 @@ a:hover{
 	font-weight: bold;	
 	color: #5d261b;
 	text-align: center;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 	letter-spacing: 0.5px;
 	margin-bottom: 3rem;
 	/* margin-top: -1rem; */
@@ -123,6 +123,7 @@ a:hover{
 
 .box {
 	width: 300px;
+  height:450px;
 	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 	overflow: hidden;
@@ -151,9 +152,10 @@ a:hover{
 	justify-items: center;
 	padding: 10px 20px;
 	box-sizing: border-box;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 	justify-content: space-between;
 	align-items: center;
+  flex-direction: column;
 }
 
 .type {
@@ -164,11 +166,12 @@ a:hover{
 
 .type a {
 	color: #5d261b;
-	margin: 5px 0px;
+	// margin: 5px 0px;
 	letter-spacing: 1px;
-	padding-right: 8px;
+	// padding-right: 8px;
 	text-decoration: none;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
+  font-weight: bolder;
 }
 
 .type a:hover {
@@ -184,12 +187,13 @@ a:hover{
 
 .price {
 	color: #5d261b;
-	font-weight: 600;
-	font-size: 1.4rem;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+	// font-weight: 600;
+	font-size: 1.2rem;
+  font-family: 'Nunito', sans-serif;
 	letter-spacing: 0.5px;
 	float: right;
 	text-decoration: none;
+  opacity: 0.8;
 }
 
 .overlay {
@@ -245,7 +249,7 @@ a:hover{
 	margin-bottom: 24px;
 	padding-left: 12px;
 	border-left: 8px solid #5d261b;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 	margin-left: 5rem;
 }
 
@@ -255,7 +259,7 @@ a:hover{
 	font-weight: 700;
 	text-decoration: none;
 	color: #5d261b;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 }
 
 .story-title-2 {
@@ -263,7 +267,7 @@ a:hover{
 	margin-top: 34px;
 	padding-left: 12px;
 	border-left: 8px solid #5d261b;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 	margin-left: 5rem;
 }
 
@@ -273,7 +277,7 @@ a:hover{
 	font-weight: 700;
 	text-decoration: none;
 	color: #5d261b;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 }
 
 .story-img {
@@ -288,7 +292,7 @@ a:hover{
 .story-img img {
 	object-fit: cover;
 	box-sizing: border-box;
-	/* width: 100%; */
+	// width: 100% !important;
 }
 
 .coffeeholic{
@@ -302,7 +306,7 @@ a:hover{
 
 .coffeeholic-section {
 	display: flex;
-	align-items: center;
+	// align-items: center;
 	justify-content: flex-start;
 }
 
@@ -315,20 +319,20 @@ a:hover{
 	font-size: 13px;
 	opacity: 0.8;
 	color: #5d261b;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 }
 
 .article-title {
 	margin-bottom: 10px;
 	margin-top: 5px;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 }
 
 .article-title a {
 	text-decoration: none;
 	color: #5d261b;
 	font-weight: 700;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 	font-size: 1.5rem;
 }
 
@@ -341,7 +345,7 @@ a:hover{
 
 .article-content {
 	color: #5d261b;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif!important;
+  font-family: 'Nunito', sans-serif;
 	font-size: 1.2rem;
 	margin-bottom: 2rem;
 }
