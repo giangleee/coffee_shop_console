@@ -112,7 +112,8 @@
                         for="inputState"
                         class="form-label"
                         :class="{ 'form-group--error': $v.user.option.$error }"
-                        >Chọn vấn đề bạn muốn liên hệ với chúng tôi bên dưới <span>*</span></label
+                        >Chọn vấn đề bạn muốn liên hệ với chúng tôi bên dưới
+                        <span>*</span></label
                     >
                     <select
                         id="inputState"
@@ -159,7 +160,7 @@
                     </div>
                 </div>
                 <div class="text-start color-text">
-                    Bằng việc ấn nút submit, tôi chấp nhận 
+                    Bằng việc ấn nút submit, tôi chấp nhận
                     <a href="">Điều khoản sử dụng</a> của trang này
                 </div>
                 <div class="col-12">
