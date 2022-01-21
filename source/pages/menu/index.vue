@@ -3,20 +3,23 @@
         <div class="about margintop">
             <h2 class="about-title text-center">
                 Xuân, hạ, thu, đông, sản phẩm thay đổi theo mùa<br />
-                "Kẹo bốn mùa HIBIKA"
+                Chúng tôi mang đến cho các bạn <br />
+                "Bánh ngọt 4 mùa HIBIKA"
             </h2>
-
             <p class="about-content text-center">
-                Đưa sự chuyển mùa tươi đẹp của bốn mùa Nhật Bản vào bánh kẹo
-                phương Tây.<br />
-                Tại HIBIKA, tất cả đồ ngọt đều có theo mùa.<br />
-                Vì vậy mà có một mùi vị và hương thơm đặc trưng của mùa đó.<br />
-                Cầu mong có điều gì đó thu hút bạn đến với sự mong manh và cảm
-                xúc mà bạn chỉ có thể gặp bây giờ.<br />
-                Dòng sản phẩm kẹo HIBIKA thay đổi theo mùa, và chúng tôi chỉ
-                chuẩn bị cho họ để vui vào thời điểm đó.<br />
-                Trong bốn mùa xuân, hạ, thu, đông, hãy thưởng thức những món đồ
-                ngọt theo mùa mang hương vị và màu sắc riêng của từng mùa.<br />
+                Tại HIBIKA, tất cả các sản phẩm bánh kẹo đều theo mùa. <br />
+                Những gì tinh túy nhất, đặc trưng nhất của bốn mùa tại đất nước
+                mặt trời mọc đều được chúng tôi gửi gắm vào sản phẩm bánh kẹo
+                của chúng tôi. <br />
+
+                Tùy từng mùa thì chúng tôi đều mang đến cho các bạn sản phẩm đặc
+                trưng nhất với những hương vị sẽ bùng nổ vị giác của các bạn.
+                <br />
+
+                Dòng sản phẩm bánh HIBIKA chúng tôi chỉ chuẩn bị theo mùa, nên
+                trước khi tiến tới chi nhánh của chúng tôi và <br />
+                thưởng thức sản phẩm, bạn hãy ghé qua trang chủ chúng tôi để
+                nhận những thông tin sớm nhất.<br />
             </p>
 
             <div class="about-more">
@@ -36,14 +39,17 @@
                                 class="about-logo"
                             />
 
-                            <h4 class="about-more-title">Kẹo bốn mùa mùa đông</h4>
+                            <h4 class="about-more-title">
+                                Kẹo bốn mùa mùa đông
+                            </h4>
 
                             <p class="about-more-date">11 / 17 ～ 2 / 28</p>
                             <p class="about-more-content">
                                 Những chiếc bánh có họa tiết hoa trà xứ lạnh<br />
-                                 nở những bông hoa đỏ tươi vào mùa đông<br />
-                                
-                                Hãy thưởng thức hương vị tinh tế chỉ có trong mùa đông.<br />
+                                nở những bông hoa đỏ tươi vào mùa đông<br />
+
+                                Hãy thưởng thức hương vị tinh tế chỉ có trong
+                                mùa đông.<br />
                             </p>
                         </div>
                     </div>

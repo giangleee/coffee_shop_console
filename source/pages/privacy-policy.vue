@@ -3,7 +3,6 @@
    <h1 class="heading">
         Privacy Policy
     </h1>
-
     <main>
         <div class="main-section">
 
