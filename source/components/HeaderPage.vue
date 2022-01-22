@@ -31,6 +31,14 @@
                                 >Liên hệ</NuxtLink
                             >
                         </li>
+
+                        <li class="nav-item">
+                            <NuxtLink
+                                class="nuxtlink nav-link"
+                                to="/about-us"
+                                >Về chúng tôi</NuxtLink
+                            >
+                        </li>
                     </ul>
                 </div>
             </div>
