@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
 #main {
 	color: #5d261b;
 	background-color: #faf8f5 !important;
@@ -350,7 +352,53 @@ a:hover{
 	margin-bottom: 2rem;
 }
 
+.shop-content{
+  margin-top: 3rem;
+}
 
+.about-shop{
+  // position: relative;
+  margin-bottom: 8rem;
+  background-color: #efe8dc;
+  padding-top: 3rem;
+}
+
+
+.about-shop h2, h4{
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+.about-shop h2{
+  margin-bottom: 1rem;
+}
+
+.about-shop-info{
+  // top: 30%;
+  // position: absolute;
+  // left: 40%;
+  margin-left: 30%;
+  margin-top: 10%;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 4rem;
+  background-color: rgb(200, 162, 122);
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+}
+
+.about-shop-info p{
+  font-size: 1.1rem;
+}
+
+.about-shop-info span{
+  font-size: 2rem;
+  border-top: #5d261b 1px solid;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  font-family: 'Allura', cursive;
+
+}
 
 @media screen and (max-width: 990px) {
 	.about .about-more-img {
@@ -432,7 +480,7 @@ a:hover{
 
 @media screen and (min-width: 1480px) {
 	.story-content{
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }

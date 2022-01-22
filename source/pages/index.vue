@@ -81,6 +81,52 @@
             </div>
         </div>
 
+       <div class="container-fluid about-shop">
+         <h1 class="title">STORE</h1>
+          <div class="row shop-content">
+            <div class="col-lg-6">
+              <div class="about-shop-info">
+                <h2>HIBIKA - The coffee shop</h2>
+                <h4>Địa chỉ: </h4 >
+                  <p>
+                    Tầng 3-4 Hub Building 195/10E Điện Biên Phủ, P.15, <br>
+                    Quận Bình Thạnh, thành phố Hồ Chí Minh.
+                  </p>
+                  <span>
+                    Chúng tôi luôn mở cửa chào đón bạn
+                  </span>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+                  <div class="banner">
+                        <b-carousel
+                            id="carousel-1"
+                            v-model="slide"
+                            class="carousel slide"
+                            :interval="4000"
+                            controls
+                            indicators
+                            @sliding-start="onSlideStart"
+                            @sliding-end="onSlideEnd"
+                        >
+                            <b-carousel-slide
+                                img-src="../assets/images/ban1.jpg"
+                            ></b-carousel-slide>
+
+                            <b-carousel-slide
+                                img-src="../assets/images/ban2.jpg"
+                            ></b-carousel-slide>
+
+                            <b-carousel-slide
+                                img-src="../assets/images/ban3.webp"
+                            ></b-carousel-slide>
+                        </b-carousel>
+                    </div>
+            </div>
+          </div>
+        </div>
+      
         <h2 class="title">FAVORITE</h2>
 
         <infinite-slide-bar
