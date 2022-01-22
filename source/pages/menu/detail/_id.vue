@@ -70,8 +70,9 @@
                     v-for="item in product.objects"
                     :key="item.id"
                     class="col-6 col-lg-3 item-list"
+                    :class="{ display: item.status !== 1 }"
                 >
-                    <div class="">
+                    <div>
                         <img :src="url_file + item.link_image" alt="" />
                         <center>
                             <NuxtLink
@@ -142,4 +143,8 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../../style/pages/menu/detail.scss';
+
+.display {
+  display: none;
+}
 </style>
