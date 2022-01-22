@@ -20,6 +20,11 @@
                                 >Liên hệ</NuxtLink
                             >
                         </li>
+                        <li>
+                            <NuxtLink class="nuxtlink" to="/about-us"
+                                >Về chúng tôi</NuxtLink
+                            >
+                        </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-3">

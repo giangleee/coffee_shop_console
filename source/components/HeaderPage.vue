@@ -35,8 +35,8 @@
                         <li class="nav-item">
                             <NuxtLink
                                 class="nuxtlink nav-link"
-                                to="/contact-form"
-                                >About-us</NuxtLink
+                                to="/about-us"
+                                >Về chúng tôi</NuxtLink
                             >
                         </li>
                     </ul>
