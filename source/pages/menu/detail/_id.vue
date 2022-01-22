@@ -18,7 +18,7 @@
                                 Đường kính 60mm x Cao 60mm
                             </dd>
                             <dt>Thời gian bán hàng</dt>
-                            <dd class="text-start">2021/11/17～2022/2/28</dd>
+                            <dd class="text-start">2021/11/17 ～ 2022/2/28</dd>
                             <dt>Giá</dt>
                             <dd
                                 v-if="mainProduct.reduced_price === null"
@@ -27,9 +27,9 @@
                                 {{ mainProduct.price }}đ
                             </dd>
                             <dd v-else class="text-start">
-                                <del style="margin-right: 10px"
-                                    >{{ mainProduct.price }}d
-                                </del>
+                                <del class="price-reduce"
+                                    >    {{ mainProduct.price }}đ
+                                </del >
                                 {{ mainProduct.reduced_price }}đ
                             </dd>
                         </dl>
